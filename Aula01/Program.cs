@@ -13,7 +13,8 @@ namespace Aula01
             int numeroRegistro;
             int setor;
             int turno;
-            int registroOnline;
+            double registroOnline;
+          
 
             //body
 
@@ -54,12 +55,14 @@ namespace Aula01
             Console.WriteLine();
             Console.WriteLine("Aperte Enter para finalizar");
             Console.WriteLine();
-           
-           // var t = task.run(async delegate
-           // {
-           //     await task.delay(1000, source.token);
-           //     return 42;
-           // });
+
+            // var t = task.run(async delegate
+            // {
+            //     await task.delay(1000, source.token);
+            //     return 42;
+            // });
+            double calculoReg = Math.Pow(numeroRegistro, 2);
+            registroOnline = Convert.ToInt32(calculoReg);
             Console.WriteLine();
             Console.WriteLine("Parabéns, seu número de Registro Online foi cadastrado! ");
             Console.WriteLine();
