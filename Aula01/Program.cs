@@ -7,31 +7,29 @@ namespace Aula01
 {
     class Program
     {
-        public static string nome, registroOnline;
-        public static char resposta;
-        public static int numeroRegistro, setor, turno;
+      //variáveis globais
+
+        public static string nome, snome, registroOnline, turno = "123", verifRegistro, setor;
+        public static int numeroRegistro;
 
         public static void Main(string[] args)
         {
-
-            //var
-
-           
             bool volta = true;
 
+  //Body
 
-            //body
+      //verificação de Nome
+
 
             while (volta)
             {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine(); Console.WriteLine("Cadastro Online de Funcionário!!"); Console.WriteLine(); Console.ResetColor();
+                
                 while (volta)
                 {
-
-                    Console.WriteLine();
-                    Console.WriteLine("Cadastro Online de Funcionário!!");
-                    Console.WriteLine();
-                    Console.Write("Digite seu nome:  ");
-                    nome = Console.ReadLine();
+                    
+                    Console.Write("Digite seu Primeiro nome:  "); nome = Console.ReadLine();
 
                     if (Regex.IsMatch(nome, @"^[a-zA-Z]+$"))
                     {
@@ -40,13 +38,30 @@ namespace Aula01
                     }
                     else
                     {
-                        Console.WriteLine();
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.Write("ERRO - Deve conter apenas letras, tente novamente!");
-                        Console.ResetColor();
-                        Console.WriteLine();
-                        int milliseconds = 2000;
-                        Thread.Sleep(milliseconds);
+                        Console.WriteLine(); Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write("ERRO - Deve conter apenas letras, tente novamente!"); Console.ResetColor();  Console.WriteLine();
+                        int milliseconds = 2000; Thread.Sleep(milliseconds);
+                        Console.Clear();
+
+
+
+                    }
+                }
+                while (volta)
+                {
+
+                    Console.Write("Digite seu sobrenome:  "); snome = Console.ReadLine();
+
+                    if (Regex.IsMatch(snome, @"^[a-zA-Z]+$"))
+                    {
+                        volta = false;
+
+                    }
+                    else
+                    {
+                        Console.WriteLine(); Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write("ERRO - Deve conter apenas letras, tente novamente!"); Console.ResetColor(); Console.WriteLine();
+                        int milliseconds = 2000; Thread.Sleep(milliseconds);
                         Console.Clear();
 
 
@@ -54,97 +69,181 @@ namespace Aula01
                     }
                 }
                 Console.WriteLine();
-                Console.Write("Bem vindo ");
-                Console.WriteLine(nome);
-                Console.WriteLine();
-                Console.WriteLine("-------------------------------------");
-                Console.WriteLine("Agora vamos completar seu perfil ");
-                Console.WriteLine("-------------------------------------");
-                Console.WriteLine();
-                Console.Write("Número de registro(sem caracteres especiais):  ");
-                numeroRegistro = int.Parse(Console.ReadLine());
-                Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine(); Console.WriteLine("-------------------------------------------");
+                Console.WriteLine(nome + ", agora vamos completar seu perfil ");
+                Console.WriteLine("-------------------------------------------"); Console.WriteLine(); Console.ResetColor();
+
+
+                //verificação de registro
+
+                volta = true;
+                while (volta)
+                {
+
+                    Console.Write("Número de registro (de 5 digitos e sem caracteres especiais):  ");
+                    numeroRegistro = int.Parse(Console.ReadLine());
+                    verifRegistro = numeroRegistro.ToString();
+                    Console.WriteLine();
+
+                    int length = verifRegistro.Length;
+
+                    if (length <= 5 && Regex.IsMatch(verifRegistro, "[0-9]"))
+                    {
+                        volta = false;
+
+                    }
+
+                    else
+                    {
+                        Console.WriteLine(); Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("ERRO - Deve conter no máximo 5 dígitos e apenas números.");
+                        Console.WriteLine("Verifique seu número de registro e tente novamente!");
+                        Console.WriteLine(); Console.ResetColor(); Console.WriteLine();
+                        int milliseconds = 2000; Thread.Sleep(milliseconds);
+                        Console.Clear();
+
+                    }
+
+                }
+
+
+                //verificação de setor
+
+
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("╔═══════════════════╗ ");
+                Console.WriteLine("║ 1 - gerencia      ║"); 
+                Console.WriteLine("║ 2 - vendas        ║");
+                Console.WriteLine("║ 3 - deposito      ║");
+                Console.WriteLine("║ 4 - administracao ║");
+                Console.WriteLine("╚═══════════════════╝");
+                Console.WriteLine(); Console.ResetColor();
                 Console.Write("Número de Setor:  ");
-                setor = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine(" ");
-                Console.Write("Turno (1,2 ou 3): ");
-                turno = int.Parse(Console.ReadLine());
-                Console.Clear();
+
+                string set = Console.ReadLine();
+
+                switch (set)
+                {
+                    case "1":
+                    case "gerencia":
+                        setor = "gerencia";
+                        break;
+                    case "2":
+                    case "vendas":
+                        setor = "vendas";
+                        break;
+                    case "3":
+                    case "deposito":
+                        setor = "deposito";
+                        break;
+                    case "4":
+                    case "administracao":
+                        setor = "administracao";
+                        break;
+                    default:
+                        Console.WriteLine("Setor inexistente, tente novamente!");
+                        break;
+                }
                 Console.WriteLine();
-                Console.WriteLine("-------------------------------------");
-                Console.WriteLine();
-                Console.WriteLine("Confirma seus dados? ");
-                Console.WriteLine();
-                Console.WriteLine(nome);
-                Console.WriteLine();
 
 
+                //verificção de turno 
 
-                Console.Write("Registro - ");
-                Console.WriteLine(numeroRegistro);
+                volta = true;
+                while (volta)
+                {
+                    Console.Write("Turno (1,2 ou 3): ");
+                    turno = Console.ReadLine();
 
-                Console.Write("Setor - ");
-                Console.WriteLine(setor);
+                    int tamanho = turno.Length;
 
-                //while (volta)
-                //{
-                Console.Write("Turno - ");
-                Console.WriteLine(turno);
-                //    if ()
-                //    {
-                //    }
-                //    else
-                //    {
-                //    }
-                //}
+                    if (tamanho == 1 && Regex.IsMatch(turno, "[1-3]"))
+                    {
+                        volta = false;
 
-                Console.WriteLine();
-                Console.WriteLine("Aperte Enter para finalizar");
-                Console.ReadKey();
-                Console.Clear();
+                    }
+
+                    else
+                    {
+                        Console.WriteLine(); Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write("ERRO - Deve conter apenas números, tente novamente!"); Console.WriteLine();
+                        Console.Write("ERRO - Turno inválido (1 - manhã, 2 - tarde, 3 - noite, tente novamente!"); Console.ResetColor(); Console.WriteLine();
+                        int milliseconds = 2000; Thread.Sleep(milliseconds);
+                        Console.Clear();
+
+                    }
+
+                }
+               
+      //confirmação de dados
+
+
+                Console.Clear(); Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine();Console.WriteLine("-------------------------------------");Console.WriteLine();
+                Console.WriteLine("Confirma seus dados? "); Console.WriteLine(); Console.WriteLine("-------------------------------------"); Console.WriteLine();
+                Console.ResetColor(); Console.Write(nome + " " + snome); Console.WriteLine(); 
+                Console.Write("Registro - "); Console.WriteLine(numeroRegistro);
+                Console.Write("Setor - ");  Console.WriteLine(setor);
+                Console.Write("Turno - "); Console.WriteLine(turno);Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.Green; Console.WriteLine("Aperte Enter para finalizar e gerar seu número de Registro Online!");
+                Console.ResetColor(); Console.ReadKey(); Console.Clear();
+
+
+      //finalização de cadastro
+
+
                 Console.WriteLine();
                 double calculoReg = Math.Pow(numeroRegistro, 2);
-                registroOnline = Convert.ToString(calculoReg);
-                Console.WriteLine();
-                Console.WriteLine("Parabéns, seu número de Registro Online foi cadastrado! ");
-                Console.WriteLine();
-                Console.WriteLine(registroOnline);
-                Console.WriteLine();
-                Console.WriteLine("---- não perca esse número ----");
-
+                registroOnline = Convert.ToString(calculoReg); Console.WriteLine();
+                Console.WriteLine("Parabéns, seu número de Registro Online foi cadastrado com Sucesso! "); Console.WriteLine();
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("             " + registroOnline); Console.WriteLine();
+                Console.ResetColor();
+                Console.WriteLine("---- não perca este número ----"); Console.WriteLine(); Console.WriteLine(); 
+                Console.WriteLine(); Console.WriteLine(); Console.WriteLine(); 
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.Write("Deseja ser direcionado para o Perfil do Funcionário?");
-                Console.Write("Y - Para Sim / ");
-                Console.ResetColor();
-                Console.ForegroundColor = ConsoleColor.Red;
-                Console.Write("N - Para Não");
-                Console.ResetColor();
-                //resposta = Convert.ToChar(Console.ReadLine());
+                Console.WriteLine("Deseja ser direcionado para o Perfil do Funcionário?"); Console.WriteLine();
+                Console.Write("Y - Para Sim / "); Console.ResetColor();
+                Console.ForegroundColor = ConsoleColor.Red; Console.WriteLine("  N - Para Não"); 
+                Console.WriteLine(); Console.ResetColor();
 
-                String input = Console.ReadLine();
 
-                while((input[0] != 'N') || (input[0] != 'Y'))
-                input = Console.ReadLine();
-               
-                    if (input[0] == 'Y')
-                    {
-                         Console.Write("Fim, por enquanto.");
-                        // redirecionado para a próxima classe
-                        Console.ReadKey();
-                    }
-                    else if (input[0] == 'N')
-                    {
-                        Console.WriteLine();
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        Console.WriteLine("Reiniciando..");
+                string output = Console.ReadLine();
+                string str = ".....";
+                switch (output)
+                {
+                    
+                    case "y":
+                    case "Y":
+
+                        Console.WriteLine(); Console.ForegroundColor = ConsoleColor.Red;
+                        Console.WriteLine("Fim, por enquanto.");
+                        Console.Write("Saindo");
+                        for (int i = 0; i < str.Length; i++)
+                        {
+                            Console.Write(".", str[i]); Thread.Sleep(500);
+                        }
+                        Console.ResetColor(); Environment.Exit(1);
+                        break;
+
+                    case "n":
+                    case "N":
+                        Console.WriteLine(); Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write("Reiniciando"); 
+                        for (int i = 0; i < str.Length; i++)
+                        {
+                            Console.Write(".", str[i]); Thread.Sleep(500);
+                        }
                         Console.ResetColor();
-                        Console.WriteLine();
-                        int milliseconds = 3000;
-                        Thread.Sleep(milliseconds);
                         Console.Clear();
-                        Console.ReadKey();
-                    }
+                        break;
+                    
+                }
 
+
+
+                volta = true;
             }
         }
 
