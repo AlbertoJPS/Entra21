@@ -1,0 +1,16 @@
+D:\Entra21\Entra21\Exercicio\ExercicioAula05\bin\Debug\net5.0\ExercicioAula05.exe
+D:\Entra21\Entra21\Exercicio\ExercicioAula05\bin\Debug\net5.0\ExercicioAula05.deps.json
+D:\Entra21\Entra21\Exercicio\ExercicioAula05\bin\Debug\net5.0\ExercicioAula05.runtimeconfig.json
+D:\Entra21\Entra21\Exercicio\ExercicioAula05\bin\Debug\net5.0\ExercicioAula05.runtimeconfig.dev.json
+D:\Entra21\Entra21\Exercicio\ExercicioAula05\bin\Debug\net5.0\ExercicioAula05.dll
+D:\Entra21\Entra21\Exercicio\ExercicioAula05\bin\Debug\net5.0\ref\ExercicioAula05.dll
+D:\Entra21\Entra21\Exercicio\ExercicioAula05\bin\Debug\net5.0\ExercicioAula05.pdb
+D:\Entra21\Entra21\Exercicio\ExercicioAula05\obj\Debug\net5.0\ExercicioAula05.csprojAssemblyReference.cache
+D:\Entra21\Entra21\Exercicio\ExercicioAula05\obj\Debug\net5.0\ExercicioAula05.GeneratedMSBuildEditorConfig.editorconfig
+D:\Entra21\Entra21\Exercicio\ExercicioAula05\obj\Debug\net5.0\ExercicioAula05.AssemblyInfoInputs.cache
+D:\Entra21\Entra21\Exercicio\ExercicioAula05\obj\Debug\net5.0\ExercicioAula05.AssemblyInfo.cs
+D:\Entra21\Entra21\Exercicio\ExercicioAula05\obj\Debug\net5.0\ExercicioAula05.csproj.CoreCompileInputs.cache
+D:\Entra21\Entra21\Exercicio\ExercicioAula05\obj\Debug\net5.0\ExercicioAula05.dll
+D:\Entra21\Entra21\Exercicio\ExercicioAula05\obj\Debug\net5.0\ref\ExercicioAula05.dll
+D:\Entra21\Entra21\Exercicio\ExercicioAula05\obj\Debug\net5.0\ExercicioAula05.pdb
+D:\Entra21\Entra21\Exercicio\ExercicioAula05\obj\Debug\net5.0\ExercicioAula05.genruntimeconfig.cache

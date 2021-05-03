@@ -1,0 +1,16 @@
+D:\Entra21\Entra21\Exercicio\Joeslei\bin\Debug\net5.0\Joeslei.exe
+D:\Entra21\Entra21\Exercicio\Joeslei\bin\Debug\net5.0\Joeslei.deps.json
+D:\Entra21\Entra21\Exercicio\Joeslei\bin\Debug\net5.0\Joeslei.runtimeconfig.json
+D:\Entra21\Entra21\Exercicio\Joeslei\bin\Debug\net5.0\Joeslei.runtimeconfig.dev.json
+D:\Entra21\Entra21\Exercicio\Joeslei\bin\Debug\net5.0\Joeslei.dll
+D:\Entra21\Entra21\Exercicio\Joeslei\bin\Debug\net5.0\ref\Joeslei.dll
+D:\Entra21\Entra21\Exercicio\Joeslei\bin\Debug\net5.0\Joeslei.pdb
+D:\Entra21\Entra21\Exercicio\Joeslei\obj\Debug\net5.0\Joeslei.csprojAssemblyReference.cache
+D:\Entra21\Entra21\Exercicio\Joeslei\obj\Debug\net5.0\Joeslei.GeneratedMSBuildEditorConfig.editorconfig
+D:\Entra21\Entra21\Exercicio\Joeslei\obj\Debug\net5.0\Joeslei.AssemblyInfoInputs.cache
+D:\Entra21\Entra21\Exercicio\Joeslei\obj\Debug\net5.0\Joeslei.AssemblyInfo.cs
+D:\Entra21\Entra21\Exercicio\Joeslei\obj\Debug\net5.0\Joeslei.csproj.CoreCompileInputs.cache
+D:\Entra21\Entra21\Exercicio\Joeslei\obj\Debug\net5.0\Joeslei.dll
+D:\Entra21\Entra21\Exercicio\Joeslei\obj\Debug\net5.0\ref\Joeslei.dll
+D:\Entra21\Entra21\Exercicio\Joeslei\obj\Debug\net5.0\Joeslei.pdb
+D:\Entra21\Entra21\Exercicio\Joeslei\obj\Debug\net5.0\Joeslei.genruntimeconfig.cache
