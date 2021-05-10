@@ -3,3 +3,14 @@ H:\resources.pak\Aula_05\obj\Debug\net5.0\Aula_05.GeneratedMSBuildEditorConfig.e
 H:\resources.pak\Aula_05\obj\Debug\net5.0\Aula_05.AssemblyInfoInputs.cache
 H:\resources.pak\Aula_05\obj\Debug\net5.0\Aula_05.AssemblyInfo.cs
 H:\resources.pak\Aula_05\obj\Debug\net5.0\Aula_05.csproj.CoreCompileInputs.cache
+H:\resources.pak\Aula_05\bin\Debug\net5.0\Aula_05.exe
+H:\resources.pak\Aula_05\bin\Debug\net5.0\Aula_05.deps.json
+H:\resources.pak\Aula_05\bin\Debug\net5.0\Aula_05.runtimeconfig.json
+H:\resources.pak\Aula_05\bin\Debug\net5.0\Aula_05.runtimeconfig.dev.json
+H:\resources.pak\Aula_05\bin\Debug\net5.0\Aula_05.dll
+H:\resources.pak\Aula_05\bin\Debug\net5.0\ref\Aula_05.dll
+H:\resources.pak\Aula_05\bin\Debug\net5.0\Aula_05.pdb
+H:\resources.pak\Aula_05\obj\Debug\net5.0\Aula_05.dll
+H:\resources.pak\Aula_05\obj\Debug\net5.0\ref\Aula_05.dll
+H:\resources.pak\Aula_05\obj\Debug\net5.0\Aula_05.pdb
+H:\resources.pak\Aula_05\obj\Debug\net5.0\Aula_05.genruntimeconfig.cache
