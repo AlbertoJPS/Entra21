@@ -1,0 +1,5 @@
+H:\resources.pak\Aula_05\obj\Debug\net5.0\Aula_05.csprojAssemblyReference.cache
+H:\resources.pak\Aula_05\obj\Debug\net5.0\Aula_05.GeneratedMSBuildEditorConfig.editorconfig
+H:\resources.pak\Aula_05\obj\Debug\net5.0\Aula_05.AssemblyInfoInputs.cache
+H:\resources.pak\Aula_05\obj\Debug\net5.0\Aula_05.AssemblyInfo.cs
+H:\resources.pak\Aula_05\obj\Debug\net5.0\Aula_05.csproj.CoreCompileInputs.cache
