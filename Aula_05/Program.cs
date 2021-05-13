@@ -142,39 +142,48 @@ namespace Aula_05
 
             // exc 07
 
-            int[][] matriz = new int[3][];
-            int valorFinal = 0;
+            //int[][] matriz = new int[3][];
+            //int valorFinal = 0;
 
-            for (int i = 0; i < matriz.Length; i ++)
-            {
-                matriz[i] = new int[3];
-            }
+            //for (int i = 0; i < matriz.Length; i ++)
+            //{
+            //    matriz[i] = new int[3];
+            //}
 
-            for (int i = 0; i < matriz.Length; i++)
-            {
-                for (int j = 0; j < matriz[i].Length; j++)
-                {
+            //for (int i = 0; i < matriz.Length; i++)
+            //{
+            //    for (int j = 0; j < matriz[i].Length; j++)
+            //    {
+            //        matriz[i][j] = i + j;
+                   
+            //        if (i < j)
+            //        {
+            //            Console.ForegroundColor = ConsoleColor.Red;
+            //            valorFinal += matriz[i][j];
+            //        }
+            //        else
+            //        {
+            //            Console.ForegroundColor = ConsoleColor.Green; 
+            //        }
+                    
+            //        Console.Write(i + "" + j);
+            //        Console.Write(" ");
 
-                    if (i < j)
-                    {
-                        Console.ForegroundColor = ConsoleColor.Red;
-                        valorFinal += matriz[i][j];
-                    }
-                    else
-                    {
-                        Console.ForegroundColor = ConsoleColor.Green; 
-                    }
+            //    }
+            //    Console.ResetColor();
+            //    Console.WriteLine();
 
-                        Console.Write(matriz[i][j] + " ");
-                }
+            //}
 
-                Console.WriteLine();
+            //Console.WriteLine();
+            //Console.Write("O valor da soma acima da diagonal é: ");
+            //Console.ForegroundColor = ConsoleColor.Red;
+            //Console.WriteLine(valorFinal);
+            //Console.ResetColor();
 
-            }
+            //exc 08
 
-            Console.WriteLine();
-            Console.WriteLine("O valor da soma acima da diagonal é: " + valorFinal);
-            
+
 
         }
     }
