@@ -1,0 +1,16 @@
+H:\resources.pak\Aula 07\bin\Debug\net5.0\Aula 07.exe
+H:\resources.pak\Aula 07\bin\Debug\net5.0\Aula 07.deps.json
+H:\resources.pak\Aula 07\bin\Debug\net5.0\Aula 07.runtimeconfig.json
+H:\resources.pak\Aula 07\bin\Debug\net5.0\Aula 07.runtimeconfig.dev.json
+H:\resources.pak\Aula 07\bin\Debug\net5.0\Aula 07.dll
+H:\resources.pak\Aula 07\bin\Debug\net5.0\ref\Aula 07.dll
+H:\resources.pak\Aula 07\bin\Debug\net5.0\Aula 07.pdb
+H:\resources.pak\Aula 07\obj\Debug\net5.0\Aula 07.csprojAssemblyReference.cache
+H:\resources.pak\Aula 07\obj\Debug\net5.0\Aula 07.GeneratedMSBuildEditorConfig.editorconfig
+H:\resources.pak\Aula 07\obj\Debug\net5.0\Aula 07.AssemblyInfoInputs.cache
+H:\resources.pak\Aula 07\obj\Debug\net5.0\Aula 07.AssemblyInfo.cs
+H:\resources.pak\Aula 07\obj\Debug\net5.0\Aula 07.csproj.CoreCompileInputs.cache
+H:\resources.pak\Aula 07\obj\Debug\net5.0\Aula 07.dll
+H:\resources.pak\Aula 07\obj\Debug\net5.0\ref\Aula 07.dll
+H:\resources.pak\Aula 07\obj\Debug\net5.0\Aula 07.pdb
+H:\resources.pak\Aula 07\obj\Debug\net5.0\Aula 07.genruntimeconfig.cache
