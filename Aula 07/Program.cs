@@ -6,17 +6,16 @@ namespace Aula_07
     {
         static void Main(string[] args)
         {
-            //    // exc 01
+            //exc 01
 
-            //    Program prog = new();
-            //    int entrada1, entrada2, resultado;
-            //    Console.WriteLine("Insira 2 números");
-            //    entrada1 = Convert.ToInt32(Console.ReadLine());
-            //    entrada2 = Convert.ToInt32(Console.ReadLine());
-            //    resultado = prog.Compara(entrada1, entrada2);
-            //    Console.WriteLine();
-            //    Console.WriteLine(resultado);
-
+            //Program prog = new();
+            //int entrada1, entrada2, resultado;
+            //Console.WriteLine("Insira 2 números");
+            //entrada1 = Convert.ToInt32(Console.ReadLine());
+            //entrada2 = Convert.ToInt32(Console.ReadLine());
+            //resultado = prog.Compara(entrada1, entrada2);
+            //Console.WriteLine();
+            //Console.WriteLine(resultado);
             //}
             //
 
@@ -60,30 +59,74 @@ namespace Aula_07
 
             //exc 06
 
+            //Program prog = new Program();
+            //Console.WriteLine("Equação: \n\n   a + b + c\n   _________\n\n     d * e\n\n");
+            //Console.WriteLine("Insira os valores de 'a', 'b', e 'c':\n");
+            //double valorA = prog.CRD();
+            //double valorB = prog.CRD();
+            //double valorC = prog.CRD();
+            //Console.WriteLine("Agora os valores de 'd', e 'e':\n");
+            //double valorD = prog.CRD();
+            //double valorE = prog.CRD();
+            //double resultado = prog.Formula6(valorA, valorB, valorC, valorD, valorE);
+            //Console.WriteLine("\n\nO resultado da equação é:\n" + resultado);
+
+
             //exc 07
 
             //exc 08
 
-            // Program prog = new Program();
-            // Console.WriteLine("Insira o tamanho do vetor:");
-            // Console.WriteLine();
-            // int tamanho = prog.CRI();
-            // int[] numeros = new int[tamanho];
-            // for (int i = 0; i < numeros.Length; i++)
-            // {
-            //     numeros[i] = prog.CRI();
-            // }
+            //Program prog = new Program();
+            //Console.WriteLine("Insira o tamanho do vetor:");
+            //Console.WriteLine();
+            //int tamanho = prog.CRI();
+            //int[] numeros = new int[tamanho];
+            //for (int i = 0; i < numeros.Length; i++)
+            //{
+            //    numeros[i] = prog.CRI();
+            //}
             //// Array.Sort(numeros);    -   alternativa para Sort
-            // numeros = prog.SortManual(numeros);
-            // for(int i = 0; i < numeros.Length; i++)
-            // {
-            //     Console.WriteLine(numeros);
-            // }
+            //numeros = prog.SortManual(numeros);
+            //for(int i = 0; i < numeros.Length; i++)
+            //{
+            //    Console.WriteLine(numeros);
+            //}
+
+            //---------------------------------------------------------------------------------------------------------------
+            //---------------------------------------------------------------------------------------------------------------
+
+            //exc 001
+
+            Program prog = new Program();
+            
+
+
+
+            //exc 002
+
+            //exc 003
+
+            //exc 004
+
+            //exc 005
 
         }
 
 
-        // Funções
+        // Funções lista 1
+
+        public string CR()
+        {
+            return Console.ReadLine();
+        }
+        public int CRI()
+        {
+            return Convert.ToInt32(CR());
+        }
+        public double CRD()
+        {
+            return Convert.ToDouble(CR());
+        }
         public int ParOuImpar(int entrada)
         {
             if (entrada % 2 == 0)
@@ -107,43 +150,16 @@ namespace Aula_07
             }
 
         }
-        public string CR()
-        {
-            return Console.ReadLine();
-        }
-        public char CRC()
-        {
-            return Convert.ToChar(CR());
-        }
-        public int CRI()
-        {
-            return Convert.ToInt32(CR());
-        }
-        public double CRD()
-        {
-            return Convert.ToDouble(CR());
-        }
         public double CToF(double f)
         {
             double c = CRD();
             f = (c * 9 / 5) + 32;
             return f;
         }
-        public int[] SortManual(int[] vetor)
+        public double Formula6(double valorA, double valorB, double valorC, double valorD, double valorE)
         {
-            for(int i = 0; i < vetor.Length; i++)
-            {
-                for (int j = i; j > 0 ; j++)
-                {
-                    if(vetor[j - 1] > vetor[j])
-                    {
-                        int temp = vetor[j];
-                        vetor[j] = vetor[j - 1];
-                        vetor[j - 1] = temp;
-                    }
-                }
-            }
-            return vetor;
+            double resultado = (valorA + valorB + valorC) / (valorD * valorE);
+            return resultado;
         }
         public double Escola(double n1, double n2, double n3, string escolha5)
         {
@@ -172,5 +188,25 @@ namespace Aula_07
                     return -1;
             }
         }
-    } 
+        public int[] SortManual(int[] vetor)
+        {
+            for (int i = 0; i < vetor.Length; i++)
+            {
+                for (int j = i; j > 0; j++)
+                {
+                    if (vetor[j - 1] > vetor[j])
+                    {
+                        int temp = vetor[j];
+                        vetor[j] = vetor[j - 1];
+                        vetor[j - 1] = temp;
+                    }
+                }
+            }
+            return vetor;
+        }
+
+        // Funções lista 2
+
+
+    }
 }
