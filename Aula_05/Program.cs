@@ -222,196 +222,302 @@ namespace Aula_05
             //Console.WriteLine(valorFinal);
             //Console.ResetColor();
 
-            ////////exc 09
+            //exc 09
 
-            //////int[][] matriz = new int[4][];
-            //////int[][] matrizOrignal = new int[4][];
+            //int[][] matriz = new int[4][];
+            //int[][] matrizT = new int[4][];
 
-            //////Random rand = new Random();
-
-            //////for (int i = 0; i < matriz.Length; i++)
-            //////{
-            //////    matriz[i] = new int[4];
-            //////    matrizOrignal[i] = new int[4];
-
-            //////}
-
-            //////Console.ForegroundColor = ConsoleColor.Green;
-            //////Console.WriteLine(); Console.WriteLine();
-            //////Console.WriteLine("Matriz Transformada"); Console.WriteLine();
-
-            //////for (int i = 0; i < matriz.Length; i++)
-            //////{
-            //////    for (int j = 0; j < matriz[i].Length; j++)
-            //////    {
-            //////        matriz[i][j] = (rand.Next() % 20) + 1;
-
-            //////        if (i < j)
-            //////        {
-            //////            Console.ForegroundColor = ConsoleColor.Red;
-            //////            matriz[i][j] = 0;
-            //////        }
-
-            //////        else
-            //////        {
-            //////            Console.ForegroundColor = ConsoleColor.Green;
-            //////        }
-
-            //////        if (matriz[i][j] < 10)
-            //////        {
-            //////            Console.Write("0" + matriz[i][j]);
-            //////            Console.Write(" ");
-            //////        }
-            //////        else
-            //////        {
-            //////            Console.Write(matriz[i][j]);
-            //////            Console.Write(" ");
-            //////        }
-            //////    }
-            //////    Console.WriteLine();
-            //////}
-            //////Console.ResetColor(); Console.WriteLine();
-
-
-            //////// ----------------------------------------------------------------------
-
-
-            //////Console.ForegroundColor = ConsoleColor.Blue;
-            //////Console.WriteLine("Matriz Original"); Console.WriteLine();
-
-            //////for (int i = 0; i < matrizOrignal.Length; i++)
-            //////{
-            //////    for (int j = 0; j < matrizOrignal[i].Length; j++)
-            //////    {
-
-            //////        matrizOrignal = matriz;
-
-
-            //////       // matrizOrignal[i][j] = (rand.Next() % 20) + 1;
-
-
-
-            //////        if (matrizOrignal[i][j] < 10)
-            //////        {
-            //////            Console.Write("0" + matrizOrignal[i][j]);
-            //////            Console.Write(" ");
-            //////        }
-            //////        else
-            //////        {
-            //////            Console.Write(matrizOrignal[i][j]);
-            //////            Console.Write(" ");
-            //////        }
-
-
-            //////    }
-            //////    Console.WriteLine();
-            //////}
-            //////Console.WriteLine();
-            //////Console.ResetColor();
-
-
-
-
-            //// exc 10
-
-            //int[][] matriz = new int[5][];
-            //Random rand = new();
+            //Random rand = new Random();
 
             //for (int i = 0; i < matriz.Length; i++)
             //{
-            //    matriz[i] = new int[5];
-            //}
+            //    matriz[i] = new int[4];
+            //    matrizT[i] = new int[4];
 
-            //Console.ForegroundColor = ConsoleColor.Yellow;
-            //Console.WriteLine("!!! Bingo !!! ");Console.WriteLine();
+            //}
 
             //for (int i = 0; i < matriz.Length; i++)
             //{
             //    for (int j = 0; j < matriz[i].Length; j++)
             //    {
-            //        matriz[i][j] = (rand.Next() % 99) + 1;
+            //        matriz[i][j] = (rand.Next() % 20) + 1;
+            //    }
 
-            //        if (matriz[i][j] == matriz[i][j])
+            //}
+
+            //Console.ForegroundColor = ConsoleColor.Blue;
+            //Console.WriteLine("Matriz Original"); Console.WriteLine();
+
+            //for (int i = 0; i < matriz.Length; i++)
+            //{
+            //    for (int j = 0; j < matriz[i].Length; j++)
+            //    {
+            //        if (matriz[i][j] < 10)
             //        {
-            //            matriz[i][j] = (rand.Next() % 99) + 1;
-            //            if (matriz[i][j] < 10 || matriz[i][j] != matriz[i][j])
-            //            {
-            //                Console.Write("0" + matriz[i][j]);
-            //                Console.Write(" ");
-            //            }
-            //            else
-            //            {
-            //                Console.Write(matriz[i][j]);
-            //                Console.Write(" ");
-            //            }
+            //            Console.Write("0" + matriz[i][j]);
+            //            Console.Write(" ");
             //        }
             //        else
             //        {
-            //            if (matriz[i][j] < 10)
-            //            {
-            //                Console.Write("0" + matriz[i][j]);
-            //                Console.Write(" ");
-            //            }
-            //            else
-            //            {
-            //                Console.Write(matriz[i][j]);
-            //                Console.Write(" ");
-            //            }
+            //            Console.Write(matriz[i][j]);
+            //            Console.Write(" ");
+            //        }
+
+
+            //    }
+            //    Console.WriteLine();
+            //}
+            //Console.WriteLine();
+            //Console.ResetColor();
+
+
+            //// ----------------------------------------------------------------------
+            //Console.ForegroundColor = ConsoleColor.Green;
+            //Console.WriteLine(); Console.WriteLine();
+            //Console.WriteLine("Matriz Transformada"); Console.WriteLine();
+
+            //matrizT = matriz;
+            //for (int i = 0; i < matrizT.Length; i++)
+            //{
+            //    for (int j = 0; j < matrizT[i].Length; j++)
+            //    {
+            //        if (i < j)
+            //        {
+            //            Console.ForegroundColor = ConsoleColor.Red;
+            //            matrizT[i][j] = 0;
+            //        }
+
+            //        else
+            //        {
+            //            Console.ForegroundColor = ConsoleColor.Green;
+            //        }
+
+            //        if (matrizT[i][j] < 10)
+            //        {
+            //            Console.Write("0" + matrizT[i][j]);
+            //            Console.Write(" ");
+            //        }
+            //        else
+            //        {
+            //            Console.Write(matrizT[i][j]);
+            //            Console.Write(" ");
             //        }
             //    }
             //    Console.WriteLine();
             //}
-            //Console.ResetColor();
+            //Console.ResetColor(); Console.WriteLine();
+
+
+            //// exc 10
+
+            //////int[][] matriz = new int[5][];
+            //////Random rand = new();
+
+            //////for (int i = 0; i < matriz.Length; i++)
+            //////{
+            //////    matriz[i] = new int[5];
+            //////}
+
+            //////Console.ForegroundColor = ConsoleColor.Yellow;
+            //////Console.WriteLine("!!! Bingo !!! ");Console.WriteLine();
+
+            //////for (int i = 0; i < matriz.Length; i++)
+            //////{
+            //////    for (int j = 0; j < matriz[i].Length; j++)
+            //////    {
+            //////        matriz[i][j] = (rand.Next() % 99) + 1;
+            //-------------------------------------------------------------------------------
+            //////        if (matriz[i][j] == matriz[i][j])
+            //////        {
+            //////            matriz[i][j] = (rand.Next() % 99) + 1;
+            //////            if (matriz[i][j] < 10 || matriz[i][j] != matriz[i][j])
+            //////            {
+            //////                Console.Write("0" + matriz[i][j]);
+            //////                Console.Write(" ");
+            //////            }
+            //////            else
+            //////            {
+            //////                Console.Write(matriz[i][j]);
+            //////                Console.Write(" ");
+            //////            }
+            //////        }
+            //////        else
+            //////        {
+            //////            if (matriz[i][j] < 10)
+            //////            {
+            //////                Console.Write("0" + matriz[i][j]);
+            //////                Console.Write(" ");
+            //////            }
+            //////            else
+            //////            {
+            //////                Console.Write(matriz[i][j]);
+            //////                Console.Write(" ");
+            //////            }
+            //////        }
+            /////------------------------------------------------------------------------------
+            //////    }
+            //////    Console.WriteLine();
+            //////}
+            //////Console.ResetColor();
 
 
             // exc 001
 
 
-            int[][] matriz = new int[3][];
-            int[][] matrizF = new int[3][];
+            //int[][] matriz = new int[3][];
+            //int[] vetor = new int[3];
+
+            //for (int i = 0; i < matriz.Length; i++)
+            //{
+            //    matriz[i] = new int[3];
+            //    vetor[i] = 0;
+            //}
+            //Console.ForegroundColor = ConsoleColor.Yellow;
+            //Console.WriteLine("Digite os Valores da Matriz:"); Console.WriteLine();
+
+            //for (int i = 0; i < matriz.Length; i++)
+            //{
+            //    for (int j = 0; j < matriz[i].Length; j++)
+            //    {
+            //        matriz[i][j] = Convert.ToInt32(Console.ReadLine());
+            //    }
+            //    Console.Clear();
+            //    Console.WriteLine("Digite os Valores da Matriz:"); Console.WriteLine();
+            //}
+
+            ////-----------------------
+
+            //for (int i = 0; i < matriz.Length; i++)
+            //{
+            //    for (int j = 0; j < matriz[i].Length; j++)
+            //    {
+            //        Console.Write(matriz[i][j] + " ");
+            //    }
+            //    Console.WriteLine();
+            //}
+            //Console.WriteLine(); 
+
+            //for (int i = 0; i < matriz.Length; i++)
+            //{
+            //    for (int j = 0; j < matriz[i].Length; j++)
+            //    {
+            //        vetor[j] += matriz[i][j];
+            //    }
+            //   // Console.Write(vetor[i] + " ");
+            //}
+            //for (int i = 0; i < vetor.Length; i++)
+            //{
+            //    Console.Write(vetor[i] + " ");
+
+            //}
+            //Console.ResetColor(); Console.WriteLine();
+
+            // exc 002
+
+            //int[][] matriz = new int[5][];
+
+            //for (int i = 0; i < matriz.Length; i++)
+            //{
+            //    matriz[i] = new int[4];
+            //}
+
+            ////a
+
+            //for (int i = 0; i < matriz.Length; i++)
+            //{
+
+            //    for (int j = 0; j < matriz[i].Length - 1; j++)
+            //    {
+            //        if (j == 0)
+            //        {
+            //            Console.WriteLine("Qual a matricula do " + (i + 1) + "º aluno");
+            //            matriz[i][j] = Convert.ToInt32(Console.ReadLine());
+            //        }
+            //        else if (j ==1 )
+            //        {
+            //            Console.WriteLine("Qual a nota das provas do " + (i + 1) + "º aluno");
+            //            matriz[i][j] = Convert.ToInt32(Console.ReadLine());
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Qual a nota dos trabalhos do " + (i + 1) + "º aluno");
+            //            matriz[i][j] = Convert.ToInt32(Console.ReadLine());
+            //        }
+            //    }
+
+            ////b
+
+            //    Console.WriteLine(); Console.WriteLine();
+            //    matriz[i][matriz[i].Length - 1] = matriz[i][1] + matriz[i][2];
+            //}
+
+            ////c
+
+            //int notaFinal = -1, valorNotaFinal = -1;
+
+            //for(int i = 0; i <matriz.Length; i++)
+            //{
+            //    if (matriz[i][3] > valorNotaFinal)
+            //    {
+            //        valorNotaFinal = matriz[i][3];
+            //        notaFinal = i;
+            //    }
+            //}
+            //Console.ForegroundColor = ConsoleColor.Green;
+
+            //Console.WriteLine();
+            //Console.WriteLine("O aluno com a nota maior é o de matrícula:");
+            //Console.WriteLine(matriz[notaFinal][0]);
+
+            ////d
+
+            //int mediaFinal = 0;
+            //for(int i = 0; i <matriz.Length; i++)
+            //{
+            //    mediaFinal += matriz[i][3];
+            //}
+            //Console.WriteLine();
+            //Console.WriteLine("A média final de todos os alunos é:");
+            //Console.WriteLine(mediaFinal / matriz.Length);
+
+            //Console.ResetColor();
+
+            // exc 003
+
+            double[][] matriz = new double[3][];
+            double[] soma = new double[1];
 
             for (int i = 0; i < matriz.Length; i++)
             {
-                matriz[i] = new int[3];
+                matriz[i] = new double[6];
             }
-            for (int i = 0; i < matriz.Length; i++)
-            {
-                matrizF[i] = new int[1];
-            }
 
-            Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("Digite os Valores da Matriz:");Console.WriteLine();
+            //a
+
 
             for (int i = 0; i < matriz.Length; i++)
             {
+
                 for (int j = 0; j < matriz[i].Length; j++)
                 {
-                    matriz[i][j] = Convert.ToInt32(Console.ReadLine());
+                    matriz[i][j] = i + j;
 
-                }
-                Console.Clear();
-            }
-
-            for (int i = 0; i < matriz.Length; i++)
-            {
-                for (int j = 0; j < matriz[i].Length; j++)
-                {
                     Console.Write(matriz[i][j] + " ");
 
-                }
-                Console.WriteLine();
-            }
-
-            for (int i = 0; i < matrizF.Length; i++)
-            {
-                for (int j = 0; j < matrizF[i].Length; j++)
-                {
-
-                    Console.Write(matrizF[i][j] + " ");
+                    //if (matriz[i][j] != matriz[i][j] % 2)
+                    // {
+                    //     soma[i] += matriz[i][j];
+                    // }
 
                 }
                 Console.WriteLine();
+                Console.WriteLine("");
+                // Console.Write(soma[i] + " ");
             }
+
+
+
+
 
             // exc 004
 

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "H:\\resources.pak\\Aula_05\\Aula_05.csproj": {}
+    "H:\\resources.pak\\Entra21\\Aula_05\\Aula_05.csproj": {}
   },
   "projects": {
-    "H:\\resources.pak\\Aula_05\\Aula_05.csproj": {
+    "H:\\resources.pak\\Entra21\\Aula_05\\Aula_05.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "H:\\resources.pak\\Aula_05\\Aula_05.csproj",
+        "projectUniqueName": "H:\\resources.pak\\Entra21\\Aula_05\\Aula_05.csproj",
         "projectName": "Aula_05",
-        "projectPath": "H:\\resources.pak\\Aula_05\\Aula_05.csproj",
+        "projectPath": "H:\\resources.pak\\Entra21\\Aula_05\\Aula_05.csproj",
         "packagesPath": "C:\\Users\\alberto.santos2\\.nuget\\packages\\",
-        "outputPath": "H:\\resources.pak\\Aula_05\\obj\\",
+        "outputPath": "H:\\resources.pak\\Entra21\\Aula_05\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
