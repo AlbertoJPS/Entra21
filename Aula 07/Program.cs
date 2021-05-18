@@ -41,36 +41,45 @@ namespace Aula_07
 
             // exc 05
 
-            Program prog = new();
-            Console.WriteLine("Insira suas 3 notas:");
-            double n1 = prog.CRD();
-            double n2 = prog.CRD();
-            double n3 = prog.CRD();
-            /*prog.Media() = */ 
+            //Program prog = new();
+            //Console.WriteLine("Insira suas 3 notas:");
+            //double n1 = prog.CRD();
+            //double n2 = prog.CRD();
+            //double n3 = prog.CRD();
+            //Console.WriteLine("\nQual operação deseja fazer? \n  A - Média\n  P - Média Ponderada\n  M - Nota mediana\n");
+            //string escolha = prog.CR();
+            //double retorno = prog.Escola(n1, n2, n3, escolha);
+            //if (retorno == -1)
+            //{
+            //    Console.WriteLine("\nDeu Ruim, opção inválida");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("\n" + retorno);
+            //}
 
-            Console.WriteLine("\nQual operação deseja fazer? \n  M - Média\n  P - Média Ponderada\n  M - Nota mediana\n");
+            //exc 06
 
-            char escolha5 = prog.CRC();
-            
-            Media(n1, n2, n3, escolha5);
+            //exc 07
 
-            
-            switch (escolha5)
-            {
-                case 'a': // média
-                    x = prog.Media(media);
-                    Console.WriteLine("Sua média é: " + x);
-                    break;
-                case 'p': // ponderação
-                    x = prog.MPonderada(mPonderada);
-                    Console.WriteLine("Sua média ponderada é: " + x);
-                    break; 
-                case 'm': // nota mediana
-                    x = prog.NMediana(nMediana);
-                    Console.WriteLine("Sua nota mediana é: " +  x);
-                    break;
+            //exc 08
 
-            }
+            // Program prog = new Program();
+            // Console.WriteLine("Insira o tamanho do vetor:");
+            // Console.WriteLine();
+            // int tamanho = prog.CRI();
+            // int[] numeros = new int[tamanho];
+            // for (int i = 0; i < numeros.Length; i++)
+            // {
+            //     numeros[i] = prog.CRI();
+            // }
+            //// Array.Sort(numeros);    -   alternativa para Sort
+            // numeros = prog.SortManual(numeros);
+            // for(int i = 0; i < numeros.Length; i++)
+            // {
+            //     Console.WriteLine(numeros);
+            // }
+
         }
 
 
@@ -104,15 +113,15 @@ namespace Aula_07
         }
         public char CRC()
         {
-            return Convert.ToChar(Console.ReadLine());
+            return Convert.ToChar(CR());
         }
         public int CRI()
         {
-            return Convert.ToInt32(Console.ReadLine());
+            return Convert.ToInt32(CR());
         }
         public double CRD()
         {
-            return Convert.ToDouble(Console.ReadLine());
+            return Convert.ToDouble(CR());
         }
         public double CToF(double f)
         {
@@ -120,53 +129,48 @@ namespace Aula_07
             f = (c * 9 / 5) + 32;
             return f;
         }
-       
-
-        public double Media(double media, double mPonderada, double nMediana, double n1, double n2, double n3, char escolha5)
+        public int[] SortManual(int[] vetor)
         {
-            
+            for(int i = 0; i < vetor.Length; i++)
+            {
+                for (int j = i; j > 0 ; j++)
+                {
+                    if(vetor[j - 1] > vetor[j])
+                    {
+                        int temp = vetor[j];
+                        vetor[j] = vetor[j - 1];
+                        vetor[j - 1] = temp;
+                    }
+                }
+            }
+            return vetor;
+        }
+        public double Escola(double n1, double n2, double n3, string escolha5)
+        {
+            double resultado = 0;
 
-            //return media;
-
-            
-
-            //return mPonderada;
-
-            
             switch (escolha5)
             {
-                case 'a': // média
-                    media = n1 + n2 + n3 / 3;
-                    Console.WriteLine("Sua média é: " + media);
-                    break;
-                case 'p': // ponderação
-                    mPonderada = (n1 * 5 + n2 * 3 + n3 * 2) / 5 + 3 + 2;
-                    Console.WriteLine("Sua média ponderada é: " + mPonderada);
-                    break;
-                case 'm': // nota mediana
-                    if (n1 < n2 || n1 > n2 && n1 < n3 || n1 > n3)
-                    {
-                        nMediana = n1;
-                    }
-                    else if (n2 < n1 || n2 > n1 && n2 < n3 || n2 > n3)
-                    {
-                        nMediana = n2;
-                    }
-                    else
-                    {
-                        nMediana = n3;
-                    }
-                    //return nMediana;
-                    Console.WriteLine("Sua nota mediana é: " + nMediana);
-                    break;
-
+                case "A": // média
+                case "a":
+                    resultado = n1 + n2 + n3 / 3;
+                    return resultado;
+                case "P": // ponderação
+                case "p":
+                    resultado = (n1 * 5 + n2 * 3 + n3 * 2) / (5 + 3 + 2);
+                    return resultado;
+                case "M": // nota mediana
+                case "m":
+                    double[] notas = new double[3];
+                    notas[1] = n1;
+                    notas[2] = n2;
+                    notas[3] = n3;
+                    Array.Sort(notas);
+                    resultado = notas[1];
+                    return resultado;
+                default:
+                    return -1;
             }
-
-
-
-
         }
-        
-       
     } 
 }
