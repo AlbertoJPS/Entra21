@@ -6,7 +6,7 @@ namespace Aula_07
     {
         static void Main(string[] args)
         {
-            //exc 01
+            ///exc 01
 
             //Program prog = new();
             //int entrada1, entrada2, resultado;
@@ -19,7 +19,7 @@ namespace Aula_07
             //}
             //
 
-            //exc 02
+            ///exc 02
 
             //Program prog = new();
             //Console.WriteLine("Insira 1 número");
@@ -27,9 +27,9 @@ namespace Aula_07
             //x = prog.ParOuImpar(x);
             //Console.WriteLine(x);
 
-            // exc 03
+            /// exc 03
 
-            // exc 04
+            /// exc 04
 
             //Program prog = new();
             //Console.WriteLine("Insira os Graus em Celsius:");
@@ -38,7 +38,7 @@ namespace Aula_07
             //Console.WriteLine(fx + " °F");
             //Console.WriteLine();
 
-            // exc 05
+            /// exc 05
 
             //Program prog = new();
             //Console.WriteLine("Insira suas 3 notas:");
@@ -57,7 +57,7 @@ namespace Aula_07
             //    Console.WriteLine("\n" + retorno);
             //}
 
-            //exc 06
+            ///exc 06
 
             //Program prog = new Program();
             //Console.WriteLine("Equação: \n\n   a + b + c\n   _________\n\n     d * e\n\n");
@@ -72,9 +72,9 @@ namespace Aula_07
             //Console.WriteLine("\n\nO resultado da equação é:\n" + resultado);
 
 
-            //exc 07
+            ///exc 07
 
-            //exc 08
+            ///exc 08
 
             //Program prog = new Program();
             //Console.WriteLine("Insira o tamanho do vetor:");
@@ -95,20 +95,66 @@ namespace Aula_07
             //---------------------------------------------------------------------------------------------------------------
             //---------------------------------------------------------------------------------------------------------------
 
-            //exc 001
+            ///exc 001
 
-            Program prog = new Program();
-            
+            //Program prog = new Program();
+
+            //Console.WriteLine("Digite 2 números:\n");
+            //int valor1 = prog.CRI();
+            //int valor2 = prog.CRI();
+            //int resultado = prog.Maior(valor1, valor2);
+            //Console.WriteLine("\nO maior numero entre os 2 é o:\n");
+            //Console.WriteLine(resultado);
+            //Console.WriteLine("Digite mais 1 número\n");
+            //int valor3 = prog.CRI();
+            //resultado = prog.Maior(resultado, valor3);
+            //Console.WriteLine("\nO maior numero entre os 2 é o:\n");
+            //Console.WriteLine(resultado);
+            //Console.WriteLine("Digite mais 1 número:\n");
+            //int valor4 = prog.CRI();
+            //resultado = prog.Maior(resultado, valor4);
+            //Console.WriteLine("\nO maior numero entre todos os informados é 0:\n");
+            //Console.WriteLine(resultado);
+
+            ///exc 002
+
+            //Program prog = new Program();
+            //Random ran = new Random();
+            //int[] vetor = new int[10];
+            //for (int i = 0; i < vetor.Length; i++)
+            //{
+            //    vetor[i] = ran.Next(0, 9 + 1);
+            //    Console.Write(vetor[i] + " ");
+            //}
+            //Console.WriteLine("\n \n");
+            //Console.WriteLine("Sr. Usuário, qual elemento deseja ver? 1 à 10");
+            //int escolha = prog.CRI();
+            //escolha--;
+            //int resultado = prog.Vetor10(vetor, escolha);
+            //Console.WriteLine(resultado);
+
+            ///exc 003
+
+            ///exc 004
+
+            ///exc 005
+
+            //Program prog = new Program();
+            //string[] logins = { "a", "b", "c", "d", "e" };
+            //string[] senhas = { "A", "B", "C", "D", "E" };
+            //Console.WriteLine("Login");
+            //string login = prog.CR();
+            //Console.WriteLine("senha");
+            //string senha = prog.CR();
+            //string resposta = prog.Autentica(logins, senhas, login, senha);
+            //Console.WriteLine(resposta);
 
 
+            ///exc 0001
+            ///exc 0002
+            ///exc 0003
 
-            //exc 002
 
-            //exc 003
-
-            //exc 004
-
-            //exc 005
 
         }
 
@@ -207,6 +253,34 @@ namespace Aula_07
 
         // Funções lista 2
 
+        public int Maior(int x, int y)
+        {
+            if (x < y)
+            {
+                int maior = y;
+                return maior;
+            }
+            else
+            {
+                int maior = x;
+                return maior;
+            }
 
+        }
+        public int Vetor10(int[] vetor, int n)
+        {
+            return vetor[n];
+        }
+        public string Autentica(string[] logins, string[] senhas, string login, string senha)
+        {
+            for (int i = 0; i < logins.Length; i++)
+            {
+                if (logins[i] == login && senhas[i] == senha)
+                {
+                    return "Login Efetuado";
+                }
+            }
+            return "Login Inválido";
+        }
     }
 }
