@@ -1,0 +1,16 @@
+H:\resources.pak\DesafioDoBombom\bin\Debug\net5.0\DesafioDoBombom.exe
+H:\resources.pak\DesafioDoBombom\bin\Debug\net5.0\DesafioDoBombom.deps.json
+H:\resources.pak\DesafioDoBombom\bin\Debug\net5.0\DesafioDoBombom.runtimeconfig.json
+H:\resources.pak\DesafioDoBombom\bin\Debug\net5.0\DesafioDoBombom.runtimeconfig.dev.json
+H:\resources.pak\DesafioDoBombom\bin\Debug\net5.0\DesafioDoBombom.dll
+H:\resources.pak\DesafioDoBombom\bin\Debug\net5.0\ref\DesafioDoBombom.dll
+H:\resources.pak\DesafioDoBombom\bin\Debug\net5.0\DesafioDoBombom.pdb
+H:\resources.pak\DesafioDoBombom\obj\Debug\net5.0\DesafioDoBombom.csprojAssemblyReference.cache
+H:\resources.pak\DesafioDoBombom\obj\Debug\net5.0\DesafioDoBombom.GeneratedMSBuildEditorConfig.editorconfig
+H:\resources.pak\DesafioDoBombom\obj\Debug\net5.0\DesafioDoBombom.AssemblyInfoInputs.cache
+H:\resources.pak\DesafioDoBombom\obj\Debug\net5.0\DesafioDoBombom.AssemblyInfo.cs
+H:\resources.pak\DesafioDoBombom\obj\Debug\net5.0\DesafioDoBombom.csproj.CoreCompileInputs.cache
+H:\resources.pak\DesafioDoBombom\obj\Debug\net5.0\DesafioDoBombom.dll
+H:\resources.pak\DesafioDoBombom\obj\Debug\net5.0\ref\DesafioDoBombom.dll
+H:\resources.pak\DesafioDoBombom\obj\Debug\net5.0\DesafioDoBombom.pdb
+H:\resources.pak\DesafioDoBombom\obj\Debug\net5.0\DesafioDoBombom.genruntimeconfig.cache

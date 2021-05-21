@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "DesafioDoBombom/1.0.0": {
+        "runtime": {
+          "DesafioDoBombom.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DesafioDoBombom/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
