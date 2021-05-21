@@ -153,7 +153,7 @@ namespace Aula_07
             /// exc 0001
 
             Program prog = new Program();
-
+            int i = 0;
 
 
             ///exc 0002
