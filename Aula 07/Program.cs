@@ -150,11 +150,15 @@ namespace Aula_07
             //Console.WriteLine(resposta);
 
 
-            ///exc 0001
+            /// exc 0001
+
+            Program prog = new Program();
+
+
+
             ///exc 0002
+
             ///exc 0003
-
-
 
         }
 
