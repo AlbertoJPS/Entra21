@@ -112,239 +112,123 @@ namespace Aula_08
 
             ///exc 06
 
-
             //List<string> logins = new List<string>();
-
             //List<string> senhas = new List<string>();
-
             //// preenche as lista com letras de 'a' a 'e'
-
             //for (int i = 97; i < 102; i++) // preenche com letras
-
             //{
-
             //    char letra = Convert.ToChar(i);
-
             //    logins.Add(letra.ToString());
-
             //    letra = Convert.ToChar(i - 32);
-
             //    senhas.Add(Convert.ToString(letra));
-
             //}
             //while (true)
-
             //{
-
             //    Console.WriteLine("Insira o login ou sair ou ver");
-
             //    string tempL = CR(); // CR() == Console.ReadLine
-
             //    if (tempL == "sair")
-
             //    {
-
             //        break;
-
             //    }
-
             //    else if (tempL == "ver")
-
             //    {
-
             //        MostraLista(logins);
-
             //        MostraLista(senhas);
-
             //    }
-
             //    else if (tempL == "Admin")
-
             //    {
-
             //        Console.WriteLine("Senha do Admin");
-
             //        string tempS = CR();
-
             //        if (tempS == "@Senac")
-
             //        {
-
             //            int a = 0;
-
             //            while (a == 0)
-
             //            {
-
             //                Console.WriteLine("\t\t***Menu Do Admin***");
-
             //                Console.WriteLine("1 - Criar Conta");
-
             //                Console.WriteLine("2 - Deletar Conta");
-
             //                Console.WriteLine("3 - LogOut");
-
             //                int escolha = CRI();// CRI() == Convert.ToInt32(Console.ReadLine());
-
             //                switch (escolha)
-
             //                {
-
             //                    case 1:
-
             //                        Console.WriteLine("Qual o login desta conta?");
-
             //                        string entrada = CR();
-
             //                        if (BuscaEmLista(logins, entrada) == -1)
-
             //                        {
-
             //                            logins.Add(entrada);
-
             //                            Console.WriteLine("Qual a senha deste login?");
-
             //                            entrada = CR();
-
             //                            senhas.Add(entrada);
-
             //                        }
-
             //                        else
-
             //                        {
-
             //                            Console.WriteLine("Login ja existente");
-
             //                        }
-
             //                        break;
-
             //                    case 2:
-
             //                        int cont = 0;
-
             //                        foreach (var item in logins)
-
             //                        {
-
             //                            cont++;
-
             //                            Console.WriteLine(cont + " -> " + item);
-
             //                        }
-
             //                        Console.WriteLine("\nQual deseja remover?");
-
             //                        cont = CRI();
-
             //                        logins.RemoveAt(cont);
-
             //                        senhas.RemoveAt(cont);
-
             //                        break;
-
             //                    case 3:
-
             //                        a = 1;
-
             //                        Console.WriteLine("Log Out efetuado");
-
             //                        break;
-
             //                    default:
-
             //                        Console.WriteLine("Opção inválida");
-
             //                        break;
-
             //                }
-
             //                Console.WriteLine("Pressione enter para progredir");
-
             //                Console.ReadLine();
-
             //                Console.Clear();
-
             //            }
-
             //        }
-
             //        else
-
             //        {
-
             //            Console.WriteLine("Senha incorreta");
-
             //        }
-
             //    }
-
             //    else
-
             //    {
-
             //        int indice = BuscaEmLista(logins, tempL);
-
             //        if (indice != -1)
-
             //        {
-
             //            Console.WriteLine("Qual a senha?");
-
             //            string tempS = CR();
-
             //            if (senhas[indice] == tempS)
-
             //            {
-
             //                Console.WriteLine("Login efetuado");
-
             //            }
-
             //            else
-
             //            {
-
             //                Console.WriteLine("Senha incorreta");
-
             //            }
-
             //        }
-
             //        else
-
             //        {
-
             //            Console.WriteLine("Login não encontrado");
-
             //        }
-
             //    }
-
             //    Console.WriteLine("Pressione enter para progredir");
-
             //    Console.ReadLine();
-
             //    Console.Clear();
-
             //}
             //// mostra as listas
-
             ////foreach (var item in logins)
-
             ////{
-
             //// Console.Write(item + " ");
-
             ////}
-
             ////Console.WriteLine();
-
             ////foreach (var item in senhas)
-
             ////{
-
             //// Console.Write(item + " ");
 
             ////}
@@ -354,42 +238,136 @@ namespace Aula_08
 
             ///exc 01
 
-            List<Produto> listaProdutos = new List<Produto>(5);
-            Console.WriteLine("Digite '-' a qualquer momento para finalizar e vizualizar lista \n");
+            //List<Produto> listaProdutos = new List<Produto>(5);
+            //Console.WriteLine("Digite '-' a qualquer momento para finalizar e vizualizar lista \n");
+            //for (int i = -1; i < listaProdutos.Count; i++)
+            //{
+            //    Produto produto = new Produto();
+            //    Console.Write("Produto: ");
+            //    produto.Nome = CR();
+            //    var verifn = produto.Nome;
+            //    Console.Write("Qantidade: ");
+            //    produto.Quantidade = CR();
+            //    var verifq = Convert.ToString(produto.Quantidade);
+            //    if (verifn == "-" || verifq == "-")
+            //    {
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        listaProdutos.Add(produto);
+            //    }
+            //    Console.WriteLine();
+            //}
+            //Console.WriteLine("\n\n Lista de produtos registrados:\n");
+            //foreach (var produto in listaProdutos)
+            //{
+            //    Console.Write(produto.Nome + " - ");
+            //    Console.WriteLine(produto.Quantidade);
+            //}
 
-            for (int i = -1; i < listaProdutos.Count; i++)
-            {
-                Produto produto = new Produto();
-                
-                Console.Write("Produto: ");
-                produto.Nome = CR();
-                var verifn = produto.Nome;
-                Console.Write("Qantidade: ");
-                produto.Quantidade = CR();
-                var verifq = Convert.ToString(produto.Quantidade);
-                
-                if (verifn == "-" || verifq == "-")
-                {
-                    break;
-                }
-                else
-                {
-                    listaProdutos.Add(produto);
-                }
-                Console.WriteLine();
-            }
-            Console.WriteLine("\n\n Lista de produtos registrados:\n");
-            foreach (var produto in listaProdutos)
-            {
-                
-                Console.Write(produto.Nome + " - ");
-                Console.WriteLine(produto.Quantidade);
-            }
 
-            //listaProdutos.Remove(produto2);
+            // ======================================================================================
+
+            ///exc 002
+            ///
+            //Console.WriteLine("Insira um número");
+            //int a = 0;
+            //while (true)
+            //{
+            //    Console.WriteLine("Insira um número");
+            //    try
+            //    {
+            //        a = int.Parse(Console.ReadLine());
+            //        Console.WriteLine("Deu Certo!!!");
+            //        break;
+            //    }
+            //    catch (OverflowException)
+            //    {
+            //        Console.WriteLine("Número Gigantesco");
+            //    }
+            //    catch (FormatException)
+            //    {
+            //        Console.WriteLine("Apenas Números");
+            //    }
+            //    catch (Exception)
+            //    {
+            //        Console.WriteLine("**Erro**");
+            //    }
+            //}
+
+            ///exc 003
+            ///
+
+            //while (true)
+            //{
+            //    Console.WriteLine("Digite 3 números entre 0 e 10\n");
+            //    try
+            //    {
+            //        double n2 = 0;
+            //        Console.WriteLine("Digite o 1º número:");
+            //        double n1 = CRD();
+            //        if (n1 <= 10 && n1 > 0)
+            //        { 
+            //            n2 = n2 + n1;
+            //        }
+            //        else
+            //        {
+            //            throw new OverflowException();
+            //        }
+            //        Console.WriteLine("Digite o 2º número:");
+            //        n1 = CRD();
+            //        if (n1 <= 10 && n1 > 0)
+            //        {
+            //            n2 = n2 + n1;
+            //        }
+            //        else
+            //        {
+            //            throw new OverflowException();
+            //        }
+            //        Console.WriteLine("Digite o 3º número:");
+            //        n1 = CRD();
+            //        if (n1 <= 10 && n1 > 0)
+            //        {
+            //            n2 = n2 + n1;
+            //        }
+            //        else
+            //        {
+            //            throw new OverflowException();
+            //        }
+            //        n1 = n2 / 3;
+            //            Console.WriteLine("\nA média entre os 3 números informados é de " + n1.ToString("F"));
+            //            break;
+            //    }
+            //    catch (OverflowException)
+            //    {
+            //        Console.ForegroundColor = ConsoleColor.Red;
+            //        Console.WriteLine("\nNúmero Gigantesco\n\n");
+            //    }
+            //    catch (FormatException)
+            //    {
+            //        Console.ForegroundColor = ConsoleColor.Red;
+            //        Console.WriteLine("\nApenas Números\n\n");
+            //    }
+            //    catch (Exception)
+            //    {
+            //        Console.ForegroundColor = ConsoleColor.Red;
+            //        Console.WriteLine("\n**Erro**\n\n");
+            //    }
+            //    Console.ForegroundColor = ConsoleColor.Red;
+            //    Console.WriteLine("Tente novamente\n");
+            //    Console.ResetColor();
+            //    Console.WriteLine("-------------------------------\n");
+            //}
+
+            ///exc 004
+            ///
+
+
         }
-        ///Funcoes
-        
+
+            ///Funções
+
         public static string CR()
 
             {
@@ -447,5 +425,6 @@ namespace Aula_08
             Console.WriteLine();
 
         }
+        
     }
 }
