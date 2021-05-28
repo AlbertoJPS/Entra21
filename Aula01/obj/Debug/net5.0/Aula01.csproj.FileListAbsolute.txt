@@ -1,0 +1,16 @@
+D:\Entra21\Entra21\Aula01\bin\Debug\net5.0\Aula01.exe
+D:\Entra21\Entra21\Aula01\bin\Debug\net5.0\Aula01.deps.json
+D:\Entra21\Entra21\Aula01\bin\Debug\net5.0\Aula01.runtimeconfig.json
+D:\Entra21\Entra21\Aula01\bin\Debug\net5.0\Aula01.runtimeconfig.dev.json
+D:\Entra21\Entra21\Aula01\bin\Debug\net5.0\Aula01.dll
+D:\Entra21\Entra21\Aula01\bin\Debug\net5.0\ref\Aula01.dll
+D:\Entra21\Entra21\Aula01\bin\Debug\net5.0\Aula01.pdb
+D:\Entra21\Entra21\Aula01\obj\Debug\net5.0\Aula01.csprojAssemblyReference.cache
+D:\Entra21\Entra21\Aula01\obj\Debug\net5.0\Aula01.GeneratedMSBuildEditorConfig.editorconfig
+D:\Entra21\Entra21\Aula01\obj\Debug\net5.0\Aula01.AssemblyInfoInputs.cache
+D:\Entra21\Entra21\Aula01\obj\Debug\net5.0\Aula01.AssemblyInfo.cs
+D:\Entra21\Entra21\Aula01\obj\Debug\net5.0\Aula01.csproj.CoreCompileInputs.cache
+D:\Entra21\Entra21\Aula01\obj\Debug\net5.0\Aula01.dll
+D:\Entra21\Entra21\Aula01\obj\Debug\net5.0\ref\Aula01.dll
+D:\Entra21\Entra21\Aula01\obj\Debug\net5.0\Aula01.pdb
+D:\Entra21\Entra21\Aula01\obj\Debug\net5.0\Aula01.genruntimeconfig.cache
