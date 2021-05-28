@@ -387,6 +387,31 @@ namespace Aula_08
             //Console.WriteLine("Insira mais um número");
             //int numero2 = CRI();
             //Console.WriteLine("\n" + Exc03(numero1, numero2));
+
+            ///exc 0004
+            ///
+
+            //Console.WriteLine("Insira um número");
+            //int numero1 = CRI();
+            //Console.WriteLine("Insira mais um número");
+            //int numero2 = CRI();
+            //Console.WriteLine("\nA soma resulta em " + Exc04(numero1, numero2) + ".");
+
+            ///exc 0005
+            ///
+
+
+            List<double> lista = new List<double>(4);
+            Random rnd = new Random();
+            lista.Add(rnd.Next(int.MaxValue));
+            Console.WriteLine(Exc05(lista));
+
+            ///exc 0006
+            ///
+
+            //Console.WriteLine("Insira um número");
+            //int x = CRI();
+            //Console.WriteLine("\n" + Exc06(x));
         }
 
         ///Funções
@@ -484,6 +509,56 @@ namespace Aula_08
             else 
             { 
                 return false; 
+            } 
+        }
+        public static string Exc04(int numero1, int numero2) 
+        { 
+            if (numero1 > numero2) 
+            {
+                string x = Convert.ToString(numero1 + numero2);
+                return x; 
+            } 
+            else 
+            { 
+                return "Não computável"; 
+            } 
+        }
+        public static double Exc05(List<double> lista) 
+        {
+            double maior = int.MaxValue;
+
+            // pode add um random?
+            // não está se fazendo uma lista, apenas declarando o valr da variável "maior"
+            //lista = new List<double>(4);
+            //Random rnd = new Random();
+            //lista.Add(rnd.Next(int.MaxValue));
+
+            for (int i = 0; i <= 3; i++)
+            {
+                foreach (var item in lista)
+                {
+                    
+                    if (item > maior)
+                    {
+                        maior = item;
+                    }
+                    
+                    Console.WriteLine(maior + " - " + item + "\n");
+                }
+
+            }
+                return maior;
+            
+        }
+        public static int Exc06(int numero) 
+        { 
+            if (numero > 0 && numero < 10) 
+            { 
+                return 1; 
+            } 
+            else 
+            { 
+                return 0; 
             } 
         }
     }
