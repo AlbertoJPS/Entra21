@@ -364,9 +364,32 @@ namespace Aula_08
             ///
 
 
+
+            // ===========================================================================================================
+
+            ///exc 0001
+            ///
+
+            //Console.WriteLine("Insira um número");
+            //int x = CRI();
+            //Console.WriteLine(Exc01(x));
+
+            ///exc 0002
+            ///
+
+            //Exc02();
+
+            ///exc 0003
+            ///
+
+            //Console.WriteLine("Insira um número");
+            //int numero1 = CRI();
+            //Console.WriteLine("Insira mais um número");
+            //int numero2 = CRI();
+            //Console.WriteLine("\n" + Exc03(numero1, numero2));
         }
 
-            ///Funções
+        ///Funções
 
         public static string CR()
 
@@ -425,6 +448,43 @@ namespace Aula_08
             Console.WriteLine();
 
         }
-        
+        public static int Exc01(int numero)
+        {
+            if (numero > 0)
+            {
+                return 1;
+            }
+            else
+            {
+                return -1;
+            }
+        }
+        public static void Exc02() 
+        { 
+            while (true) 
+            { 
+                Console.WriteLine("Insira um numero ou sair"); 
+                string entrada = Console.ReadLine();
+                if (entrada == "sair" || entrada == "Sair") 
+                { 
+                    break; 
+                } 
+                else 
+                { 
+                    Console.WriteLine("\n" + entrada); 
+                } 
+            } 
+        }
+        public static bool Exc03(int numero1, int numero2)  
+        { 
+            if (numero1 > numero2) 
+            { 
+                return true; 
+            } 
+            else 
+            { 
+                return false; 
+            } 
+        }
     }
 }
