@@ -1,0 +1,16 @@
+H:\resources.pak\AlbertoJPSantos\bin\Debug\net5.0\AlbertoJPSantos.exe
+H:\resources.pak\AlbertoJPSantos\bin\Debug\net5.0\AlbertoJPSantos.deps.json
+H:\resources.pak\AlbertoJPSantos\bin\Debug\net5.0\AlbertoJPSantos.runtimeconfig.json
+H:\resources.pak\AlbertoJPSantos\bin\Debug\net5.0\AlbertoJPSantos.runtimeconfig.dev.json
+H:\resources.pak\AlbertoJPSantos\bin\Debug\net5.0\AlbertoJPSantos.dll
+H:\resources.pak\AlbertoJPSantos\bin\Debug\net5.0\ref\AlbertoJPSantos.dll
+H:\resources.pak\AlbertoJPSantos\bin\Debug\net5.0\AlbertoJPSantos.pdb
+H:\resources.pak\AlbertoJPSantos\obj\Debug\net5.0\AlbertoJPSantos.csprojAssemblyReference.cache
+H:\resources.pak\AlbertoJPSantos\obj\Debug\net5.0\AlbertoJPSantos.GeneratedMSBuildEditorConfig.editorconfig
+H:\resources.pak\AlbertoJPSantos\obj\Debug\net5.0\AlbertoJPSantos.AssemblyInfoInputs.cache
+H:\resources.pak\AlbertoJPSantos\obj\Debug\net5.0\AlbertoJPSantos.AssemblyInfo.cs
+H:\resources.pak\AlbertoJPSantos\obj\Debug\net5.0\AlbertoJPSantos.csproj.CoreCompileInputs.cache
+H:\resources.pak\AlbertoJPSantos\obj\Debug\net5.0\AlbertoJPSantos.dll
+H:\resources.pak\AlbertoJPSantos\obj\Debug\net5.0\ref\AlbertoJPSantos.dll
+H:\resources.pak\AlbertoJPSantos\obj\Debug\net5.0\AlbertoJPSantos.pdb
+H:\resources.pak\AlbertoJPSantos\obj\Debug\net5.0\AlbertoJPSantos.genruntimeconfig.cache

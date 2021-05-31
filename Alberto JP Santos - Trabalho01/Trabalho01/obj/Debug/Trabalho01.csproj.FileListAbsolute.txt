@@ -1,7 +1,0 @@
-C:\Users\Victor Schmitt\source\repos\Trabalho01\bin\Debug\Trabalho01.exe.config
-C:\Users\Victor Schmitt\source\repos\Trabalho01\bin\Debug\Trabalho01.exe
-C:\Users\Victor Schmitt\source\repos\Trabalho01\bin\Debug\Trabalho01.pdb
-C:\Users\Victor Schmitt\source\repos\Trabalho01\obj\Debug\Trabalho01.csprojAssemblyReference.cache
-C:\Users\Victor Schmitt\source\repos\Trabalho01\obj\Debug\Trabalho01.csproj.CoreCompileInputs.cache
-C:\Users\Victor Schmitt\source\repos\Trabalho01\obj\Debug\Trabalho01.exe
-C:\Users\Victor Schmitt\source\repos\Trabalho01\obj\Debug\Trabalho01.pdb
