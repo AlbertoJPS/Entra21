@@ -13,30 +13,44 @@ namespace AlbertoJPSantos
             ///1º Recebe Carga e organiza estoque
             ///
 
-            Console.WriteLine("Cargas");
-            int[] cargas = new int[Geradores.Qtd()];
-            Console.WriteLine(cargas.Length);
-
+            int cargas = Geradores.Qtd();
             Console.WriteLine("\nEntradas de produtos");
+
             List<string> entradas = new List<string>();
             int item = 0;
-
-            for (int i = 0; i < cargas.Length; i++)
+            for (int i = 0; i < cargas; i++)
             {
                 entradas = Geradores.GeraEntrada();
-
                 foreach (var iten in entradas)
                 {
                     Console.Write(iten);
-                    item = Convert.ToInt32(iten);
+
+                    if(iten == "1")
+                    {
+                        Funcoes.Adiciona(1);
+                    }
+                    else if(iten == "2")
+                    {
+                        Funcoes.Adiciona(2);
+                    }
+                    else if(iten == "3")
+                    {
+                        Funcoes.Adiciona(3);
+                    }
+                    else
+                    {
+                        Funcoes.Adiciona(4);
+                    }
+
+                    //como cada numero vem separadamente, preciso colocar a condicional aqui direto para que vá direto para
+                    //estoque na matriz.. 
                 }
-                Console.WriteLine();
             }
-            
+
             ///2º Mostra estoque
             ///
 
-            Funcoes.Matriz();
+            Funcoes.TodasMatrizes();
 
             ///3º Envia carga
             ///
