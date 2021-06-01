@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AlbertoJPSantos
 {
-    public class Funcoes
+    public static class Funcoes
     {
         
         public static int[][] matriz = new int[6][];
