@@ -1,0 +1,16 @@
+H:\resources.pak\Aula OO\bin\Debug\net5.0\Aula OO.exe
+H:\resources.pak\Aula OO\bin\Debug\net5.0\Aula OO.deps.json
+H:\resources.pak\Aula OO\bin\Debug\net5.0\Aula OO.runtimeconfig.json
+H:\resources.pak\Aula OO\bin\Debug\net5.0\Aula OO.runtimeconfig.dev.json
+H:\resources.pak\Aula OO\bin\Debug\net5.0\Aula OO.dll
+H:\resources.pak\Aula OO\bin\Debug\net5.0\ref\Aula OO.dll
+H:\resources.pak\Aula OO\bin\Debug\net5.0\Aula OO.pdb
+H:\resources.pak\Aula OO\obj\Debug\net5.0\Aula OO.csprojAssemblyReference.cache
+H:\resources.pak\Aula OO\obj\Debug\net5.0\Aula OO.GeneratedMSBuildEditorConfig.editorconfig
+H:\resources.pak\Aula OO\obj\Debug\net5.0\Aula OO.AssemblyInfoInputs.cache
+H:\resources.pak\Aula OO\obj\Debug\net5.0\Aula OO.AssemblyInfo.cs
+H:\resources.pak\Aula OO\obj\Debug\net5.0\Aula OO.csproj.CoreCompileInputs.cache
+H:\resources.pak\Aula OO\obj\Debug\net5.0\Aula OO.dll
+H:\resources.pak\Aula OO\obj\Debug\net5.0\ref\Aula OO.dll
+H:\resources.pak\Aula OO\obj\Debug\net5.0\Aula OO.pdb
+H:\resources.pak\Aula OO\obj\Debug\net5.0\Aula OO.genruntimeconfig.cache
