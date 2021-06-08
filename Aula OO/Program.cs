@@ -99,25 +99,44 @@ namespace Aula_OO
             //    }
             //}
 
-            ///exc 04
+            ///exc 04 -------------- não finalizado
             ///
-            List<Animais> animais = new List<Animais>();
+            //List<Animais> animais = new List<Animais>();
 
-            for (int i = 0; i < 2; i++)
-            {
-                Animais animal = new Animais();
+            //for (int i = 0; i < 2; i++)
+            //{
+            //    Animais animal = new Animais();
 
-                Console.Write("\nInsira o nome do animal: "); animal.nome = Console.ReadLine();
-                Console.Write("Insira a idade: "); animal.idade = Convert.ToInt32(Console.ReadLine());
-                Console.Write("Insira sua espécie: "); animal.genero = Console.ReadLine();
-                Console.Write("Insira o tempo que ele está no Zoo em dias: "); animal.tempoZoo = Convert.ToInt32(Console.ReadLine());
-                animais.Add(animal);
-            }
-            // fazer o sort manual
-            foreach (var item in animais)
-            {
-                Console.WriteLine(item.nome + " " + item.idade + " " + item.especie + " " + item.tempoZoo);
-            }
+            //    Console.Write("\nInsira o nome do animal: "); animal.nome = Console.ReadLine();
+            //    Console.Write("Insira a idade: "); animal.idade = Convert.ToInt32(Console.ReadLine());
+            //    Console.Write("Insira sua espécie: "); animal.genero = Console.ReadLine();
+            //    Console.Write("Insira o tempo que ele está no Zoo em dias: "); animal.tempoZoo = Convert.ToInt32(Console.ReadLine());
+            //    animais.Add(animal);
+            //    for (int l = animais.Count - 1; l >= 0; l--)
+            //    {
+            //        for (int j = 1; j <= l; j++)
+            //        {
+            //            if (animal.idade[j - 1] > animal.idade[j])
+            //            {
+            //                var temp = animal.idade[j - 1];
+            //                animal.idade[j - 1] = animal.idade[j];
+            //                animal.idade[j] = temp;
+            //            }
+            //        }
+            //    }
+            //}
+            //// fazer o sort manual
+
+            //foreach (var item in animais)
+            //{
+            //    Console.WriteLine(item.nome + " " + item.idade + " " + item.especie + " " + item.tempoZoo);
+            //}
+
+            /// --------------- não finalizado
+            
+            ///Exc 05
+            ///
+
         }
     }
 }
