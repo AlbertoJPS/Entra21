@@ -262,7 +262,8 @@ namespace Aula_OO
             //    int idade = int.Parse(Console.ReadLine());
             //    Cachorro cao = new Cachorro(nome, nomeDoDono, idade);
             //    cachorro.Add(cao);
-            //}            //int cont =0;
+            //}           
+            //int cont =0;
             //for (int i = 0; i < cachorro.Count; i++)
             //{
             //    if (cachorro[i].idade >= 4)
@@ -278,10 +279,65 @@ namespace Aula_OO
             //{
             //    Console.WriteLine("\nNão Possuem cachorros com mais de 4 anos de idade");
             //}
-             
+
             ///Exc 04
             ///
 
+            List<Estoque> estoque = new List<Estoque>();
+
+            for (int i = 0; i < 3; i++)
+            {
+                Console.WriteLine("\n\nInsira o nome do Produto");
+                string nome = Console.ReadLine();
+                Console.WriteLine("Insira o Preço");
+                double preco = double.Parse(Console.ReadLine());
+                Console.WriteLine("Insira a Quantidade");
+                int quantidade = int.Parse(Console.ReadLine());
+                Estoque estq = new Estoque(nome, preco, quantidade);
+                estoque.Add(estq);
+            }
+            SortManual(estoque);
+
+            Console.WriteLine("\nProdutos em estoque: \n");
+            for (int i = 0; i < estoque.Count; i++)
+            {
+                Console.WriteLine("\nNome: " + estoque[i].nome);
+                Console.WriteLine("Preço: " + estoque[i].preco);
+                Console.WriteLine("Quantidade: " + estoque[i].quantidade);
+            }
         }
+
+        public static void SortManual(List<Estoque> estoque)
+        {
+            for (int i = 0; i < estoque.Count; i++)
+            {
+                for (int j = i; j > 0; j--)
+                {
+                    if (estoque[j - 1].quantidade < estoque[j].quantidade)
+                    {
+                        Estoque temp = estoque[j];
+                        estoque[j] = estoque[j - 1];
+                        estoque[j - 1] = temp;
+                    }
+                }
+            }
+        }
+        // sort do menor para o maior 
+
+        //public static void SortManual(List<Estoque> estoque)
+        //{
+        //    for (int i = 0; i < estoque.Count; i++)
+        //    {
+        //        for (int j = i; j > 0; j--)
+        //        {
+        //            if (estoque[j - 1].quantidade > estoque[j].quantidade)
+        //            {
+        //                Estoque temp = estoque[j];
+        //                estoque[j] = estoque[j - 1];
+        //                estoque[j - 1] = temp;
+        //            }
+        //        }
+        //    }
+        //}
     }
 }
