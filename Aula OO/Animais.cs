@@ -8,10 +8,7 @@ namespace Aula_OO
 {
     class Animais
     {
-        public string nome;
-        public int idade;
-        public string genero;
-        public string especie;
-        public int tempoZoo;
+        public string nome, genero, especie;
+        public int idade, tempoZoo;
     }
 }

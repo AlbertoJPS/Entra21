@@ -6,15 +6,17 @@ using System.Threading.Tasks;
 
 namespace Aula_OO
 {
-    class Cachorro : Animais
+    class SerHumano
     {
-        public string nomeDoDono;
+        public string nome;
+        public int idade;
+        public string genero;
 
-        public Cachorro(string nome, string nomeDoDono, int idade)
+        public SerHumano(string nome, int idade, string genero)
         {
             this.nome = nome;
             this.idade = idade;
-            this.nomeDoDono = nomeDoDono;
+            this.genero = genero;
         }
     }
 }
