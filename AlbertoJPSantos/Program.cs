@@ -10,13 +10,13 @@ namespace AlbertoJPSantos
             //Escreva seus códigos Aqui;)
             //Nome: Alberto José Pereira dos Santos
 
-            ///2º Mostra estoque
+            ///2º Mostra estoque 
             ///
             Console.WriteLine("Estoque\n");
-            Funcoes.Matriz1(0); Console.WriteLine("\n");
-            Funcoes.Matriz2(); Console.WriteLine("\n");
-            Funcoes.Matriz3(); Console.WriteLine("\n");
-            Funcoes.Matriz4(); Console.WriteLine("\n");
+            Funcoes.Estoque1(1); Console.WriteLine("\n");
+            //Funcoes.Matriz2(0); Console.WriteLine("\n");
+            //Funcoes.Matriz3(0); Console.WriteLine("\n");
+            //Funcoes.Matriz4(0); Console.WriteLine("\n");
 
             ///1º Recebe Carga e organiza estoque
             ///
@@ -28,14 +28,14 @@ namespace AlbertoJPSantos
             for (int i = 0; i < cargasIn; i++)
             {
                 entradas = Geradores.GeraEntrada();
-                foreach (var iten in entradas)
+                foreach (var item in entradas)
                 {
-                    Console.Write(iten);
+                    Console.Write(item);
 
-                    //    if (iten == "1")
-                    //    {
-                    //        Funcoes.Adiciona(1);
-                    //    }
+                    if (item == "1")
+                    {
+                        Funcoes.Estoque1(2);
+                    }
                     //    else if (iten == "2")
                     //    {
                     //        Funcoes.Adiciona(2);
@@ -53,8 +53,14 @@ namespace AlbertoJPSantos
                     //estoque na matriz.. 
                     //}
                 }
+                Console.WriteLine();
             }
-            
+            Console.WriteLine();
+
+            /// mostra matriz
+            /// 
+            Funcoes.Estoque1(4); 
+
 
             ///3º Envia carga
             ///
@@ -64,7 +70,20 @@ namespace AlbertoJPSantos
             for (int i = 0; i < cargasOut; i++)
             {
                 string saida = Geradores.OrdemDeServico();
-                Console.WriteLine(saida);
+                foreach(var item in saida)
+                {
+                    Console.WriteLine(saida);
+                    if (item == '1')
+                    {
+                        Funcoes.Estoque1(3);
+                    }
+
+                }
+           
+
+
+
+
             }
             
             // fazer um vetor que receberá o tamanho do int sida e obter o valor de cada posição
