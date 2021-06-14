@@ -10,18 +10,36 @@ namespace AlbertoJPSantos
             //Escreva seus códigos Aqui;)
             //Nome: Alberto José Pereira dos Santos
 
-            ///2º Mostra estoque 
+            //  opções_de_ações_no_estoque___________________________________________________
+            //  |                                                                            |
+            //  | x = 1 (cria primeiro estoque    )     x = 2 (adiciona um item ao estoque)  |
+            //  | x = 3 (retira um item do estoque)     x = 4 (mostra o estoque atual     )  |
+            //  |____________________________________________________________________________|
+
+
+            ///2º Mostra estoque ------------------------------------------------------------------
             ///
+            int dia = 1;
+            Console.WriteLine("Dia " +dia+ "\n");
             Console.WriteLine("Estoque\n");
-            Funcoes.Estoque1(1); Console.WriteLine("\n");
-            //Funcoes.Matriz2(0); Console.WriteLine("\n");
-            //Funcoes.Matriz3(0); Console.WriteLine("\n");
-            //Funcoes.Matriz4(0); Console.WriteLine("\n");
+            if (dia == 1)
+            {
+                Funcoes.Estoque1(1); Console.WriteLine("\n");
+                Funcoes.Estoque2(1); Console.WriteLine("\n");
+                Funcoes.Estoque3(1); Console.WriteLine("\n");
+                Funcoes.Estoque4(1); Console.WriteLine("\n");
+            }
+            else
+            {
+                Funcoes.Estoque1(4); Console.WriteLine("\n");
+                Funcoes.Estoque2(4); Console.WriteLine("\n");
+                Funcoes.Estoque3(4); Console.WriteLine("\n");
+                Funcoes.Estoque4(4); Console.WriteLine("\n");
+            }
 
-            ///1º Recebe Carga e organiza estoque
+            ///1º Recebe Carga e organiza estoque -------------------------------------------------
             ///
 
-            
             Console.WriteLine("\nEntradas de produtos");
             int cargasIn = Geradores.Qtd();
             List<string> entradas = new List<string>();
@@ -36,61 +54,65 @@ namespace AlbertoJPSantos
                     {
                         Funcoes.Estoque1(2);
                     }
-                    //    else if (iten == "2")
-                    //    {
-                    //        Funcoes.Adiciona(2);
-                    //    }
-                    //    else if (iten == "3")
-                    //    {
-                    //        Funcoes.Adiciona(3);
-                    //    }
-                    //    else
-                    //    {
-                    //        Funcoes.Adiciona(4);
-                    //    }
+                    else if (item == "2")
+                    {
+                        Funcoes.Estoque2(2);
+                    }
+                    else if (item == "3")
+                    {
+                        Funcoes.Estoque3(2);
+                    }
+                    else
+                    {
+                        Funcoes.Estoque4(2);
+                    }
 
-                    //como cada numero vem separadamente, preciso colocar a condicional aqui direto para que vá direto para
-                    //estoque na matriz.. 
-                    //}
                 }
                 Console.WriteLine();
             }
             Console.WriteLine();
 
-            /// mostra matriz
-            /// 
-            Funcoes.Estoque1(4); 
 
-
-            ///3º Envia carga
+            ///3º Envia carga ---------------------------------------------------------------------
             ///
-            Console.WriteLine("\n");
             int cargasOut = Geradores.Qtd();
             Console.WriteLine("\nSaida de produtos");
             for (int i = 0; i < cargasOut; i++)
             {
                 string saida = Geradores.OrdemDeServico();
-                foreach(var item in saida)
+                Console.WriteLine(saida);
+                foreach (var item in saida)
                 {
-                    Console.WriteLine(saida);
                     if (item == '1')
                     {
                         Funcoes.Estoque1(3);
                     }
-
+                    else if (item == '2')
+                    {
+                        Funcoes.Estoque2(3);
+                    }
+                    else if (item == '3')
+                    {
+                        Funcoes.Estoque3(3);
+                    }
+                    else
+                    {
+                        Funcoes.Estoque4(3);
+                    }
                 }
-           
-
-
-
-
             }
-            
-            // fazer um vetor que receberá o tamanho do int sida e obter o valor de cada posição
+            Console.WriteLine();
 
-            ///4º Mostra estoque atualizado
+
+            ///4º Mostra estoque atualizado ------------------------------------------------------
             ///
+            Funcoes.Estoque1(4); Console.WriteLine("\n");
+            Funcoes.Estoque2(4); Console.WriteLine("\n");
+            Funcoes.Estoque3(4); Console.WriteLine("\n");
+            Funcoes.Estoque4(4); Console.WriteLine("\n");
 
+            Console.WriteLine("fim do dia Dia " + dia + "\n");
+            dia++;
             Console.WriteLine("\n\nPressione 'Enter' para Prossegir...");
             Console.ReadKey();
 
