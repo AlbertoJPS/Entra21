@@ -9,28 +9,55 @@ namespace AlbertoJPSantos
     public static class Funcoes
     {
         
-        public static int[][] matriz = new int[6][];
+        //public static int[][] matriz = new int[6][];
 
-        public static void Matriz1()
+        public static void Matriz1(int x)
         {
-           // int[][] matriz = new int[6][];
-            for (int i = 0; i < matriz.Length; i++)
-            {
-                matriz[i] = new int[6];
-            }
-            for (int i = 0; i < matriz.Length; i++)
-            {
-                for (int j = 0; j < matriz[i].Length; j++)
-                {
-                    matriz[i][j] = i + j;
+            int[][] matriz1 = new int[6][];
 
-                    if (i < 3)
+            for (int i = 0; i < matriz1.Length; i++)
+            {
+                matriz1[i] = new int[6];
+
+            }
+            for (int i = 0; i < matriz1.Length; i++)
+            {
+                for (int j = 0; j < matriz1[i].Length; j++)
+                {
+                    matriz1[i][j] = i + j;
+
+                    // x = 0 (primeiro estoque) 
+                    // x = 1 (não faz nada no estoque) 
+                    // x = 2 (adiciona um item ao estoque) 
+                    // x = 3 (retira um item do estoque)
+
+                    // o laço a seguir fará com que a adição de metade do estoque, ocorra uma unica vez
+                    while (x == 0)
                     {
-                        Console.Write(1);
+                        if (i < 3)
+                        {
+                            Console.Write(1);
+                            break;
+                        }
+                        else if (i >= 3)
+                        {
+                            Console.Write(0);
+                            break;
+                        }
+                        else if (i == 5 && j == 5)
+                        {
+                            x = 1;
+                            //break;
+                        }
                     }
-                    else
+                    //vai adicionar um item ao estoque
+                    while (x == 2)
                     {
-                        Console.Write(0);
+                        if (matriz1[i][j] == 0)
+                        {
+                            Console.Write(1);
+                            x = 1;
+                        }
                     }
                 }
                 Console.WriteLine();
@@ -38,7 +65,7 @@ namespace AlbertoJPSantos
         }
         public static void Matriz2()
         {
-            //int[][] matriz = new int[6][];
+            int[][] matriz = new int[6][];
             for (int i = 0; i < matriz.Length; i++)
             {
                 matriz[i] = new int[6];
@@ -63,7 +90,7 @@ namespace AlbertoJPSantos
         }
         public static void Matriz3()
         {
-            //int[][] matriz = new int[6][];
+            int[][] matriz = new int[6][];
             for (int i = 0; i < matriz.Length; i++)
             {
                 matriz[i] = new int[6];
@@ -88,7 +115,7 @@ namespace AlbertoJPSantos
         }
         public static void Matriz4()
         {
-            //int[][] matriz = new int[6][];
+            int[][] matriz = new int[6][];
             for (int i = 0; i < matriz.Length; i++)
             {
                 matriz[i] = new int[6];
@@ -111,41 +138,7 @@ namespace AlbertoJPSantos
                 Console.WriteLine();
             }
         }
-        public static void TodasMatrizes()
-        {
-            Console.WriteLine("\n");
-            Matriz1(); Console.WriteLine("\n");
-            Matriz2(); Console.WriteLine("\n");
-            Matriz3(); Console.WriteLine("\n");
-            Matriz4(); Console.WriteLine("\n");
-        }
-        public static void Adiciona(int id)
-        {
-            //int[][] matriz = new int[6][];
-           
-            for (int i = 0; i < matriz.Length; i++)
-            {
-                for (int j = 0; j < matriz[i].Length; j++)
-                {
-                    if (matriz[i][j] == 0 && id == 1)
-                    { 
-                        Console.Write(1);
-                    }
-                    else if (matriz[i][j] == 0 && id == 2)
-                    {
-                        Console.Write(2);
-                    }
-                    else if (matriz[i][j] == 0 && id == 3)
-                    {
-                        Console.Write(3);
-                    }
-                    else if (matriz[i][j] == 0 && id == 4)
-                    {
-                        Console.Write(4);
-                    }
-                }
-            }
-        }
+
     }
         // achar um modo de fazer a condicional do Adicionar localizar a matriz especifica a ser mudada
         // descobrir qual propriedade poderia ser adicionada, e se deixaria o tipo como void

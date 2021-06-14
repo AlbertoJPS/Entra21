@@ -10,14 +10,21 @@ namespace AlbertoJPSantos
             //Escreva seus códigos Aqui;)
             //Nome: Alberto José Pereira dos Santos
 
+            ///2º Mostra estoque
+            ///
+            Console.WriteLine("Estoque\n");
+            Funcoes.Matriz1(0); Console.WriteLine("\n");
+            Funcoes.Matriz2(); Console.WriteLine("\n");
+            Funcoes.Matriz3(); Console.WriteLine("\n");
+            Funcoes.Matriz4(); Console.WriteLine("\n");
+
             ///1º Recebe Carga e organiza estoque
             ///
 
-            int cargasIn = Geradores.Qtd();
+            
             Console.WriteLine("\nEntradas de produtos");
-
+            int cargasIn = Geradores.Qtd();
             List<string> entradas = new List<string>();
-            int item = 0;
             for (int i = 0; i < cargasIn; i++)
             {
                 entradas = Geradores.GeraEntrada();
@@ -25,36 +32,33 @@ namespace AlbertoJPSantos
                 {
                     Console.Write(iten);
 
-                    //if (iten == "1")
-                    //{
-                    //    Funcoes.Adiciona(1);
-                    //}
-                    //else if (iten == "2")
-                    //{
-                    //    Funcoes.Adiciona(2);
-                    //}
-                    //else if (iten == "3")
-                    //{
-                    //    Funcoes.Adiciona(3);
-                    //}
-                    //else
-                    //{
-                    //    Funcoes.Adiciona(4);
-                    //}
+                    //    if (iten == "1")
+                    //    {
+                    //        Funcoes.Adiciona(1);
+                    //    }
+                    //    else if (iten == "2")
+                    //    {
+                    //        Funcoes.Adiciona(2);
+                    //    }
+                    //    else if (iten == "3")
+                    //    {
+                    //        Funcoes.Adiciona(3);
+                    //    }
+                    //    else
+                    //    {
+                    //        Funcoes.Adiciona(4);
+                    //    }
 
                     //como cada numero vem separadamente, preciso colocar a condicional aqui direto para que vá direto para
                     //estoque na matriz.. 
+                    //}
                 }
             }
-
-            ///2º Mostra estoque
-            ///
-
-            Funcoes.TodasMatrizes();
+            
 
             ///3º Envia carga
             ///
-
+            Console.WriteLine("\n");
             int cargasOut = Geradores.Qtd();
             Console.WriteLine("\nSaida de produtos");
             for (int i = 0; i < cargasOut; i++)
@@ -62,7 +66,6 @@ namespace AlbertoJPSantos
                 string saida = Geradores.OrdemDeServico();
                 Console.WriteLine(saida);
             }
-                
             
             // fazer um vetor que receberá o tamanho do int sida e obter o valor de cada posição
 
