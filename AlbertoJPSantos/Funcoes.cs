@@ -46,9 +46,9 @@ namespace AlbertoJPSantos
             return matriz4;
         }
 
-        //  opções_______________________________________________________________________
+        //  opções_de_ações_no_estoque___________________________________________________
         //  |                                                                            |
-        //  | x = 1 (cria primeiro estoque    )     x = 2 (adiciona um item ao estoque)  |
+        //  | x = 1 (mostra primeiro estoque  )     x = 2 (adiciona um item ao estoque)  |
         //  | x = 3 (retira um item do estoque)     x = 4 (mostra o estoque atual     )  |
         //  |____________________________________________________________________________|
 
@@ -109,6 +109,11 @@ namespace AlbertoJPSantos
                             {
                                 j = 5;
                                 i--;
+                                if (i == -1)
+                                {
+                                    temp = 1;
+                                    break;
+                                }
                             }
                             matriz1[i][j] = 0;
                             temp = 1;
@@ -190,6 +195,11 @@ namespace AlbertoJPSantos
                             {
                                 j = 5;
                                 i--;
+                                if (i == -1)
+                                {
+                                    temp = 1;
+                                    break;
+                                }
                             }
                             matriz2[i][j] = 0;
                             temp = 1;
@@ -271,7 +281,13 @@ namespace AlbertoJPSantos
                             {
                                 j = 5;
                                 i--;
+                                if (i == -1)
+                                {
+                                    temp = 1;
+                                    break;
+                                }
                             }
+                            
                             matriz3[i][j] = 0;
                             temp = 1;
                             break;
@@ -353,6 +369,11 @@ namespace AlbertoJPSantos
                             {
                                 j = 5;
                                 i--;
+                                if (i == -1)
+                                {
+                                    temp = 1;
+                                    break;
+                                }
                             }
                             matriz4[i][j] = 0;
                             temp = 1;
@@ -383,6 +404,7 @@ namespace AlbertoJPSantos
         // achar um modo de fazer a condicional do Adicionar localizar a matriz especifica a ser mudada
         // descobrir qual propriedade poderia ser adicionada, e se deixaria o tipo como void
         //fazer uma função que varre a matriz a procura de um 0 e da break assim q acha, se n achar, fazer o discarte
+
             // 0.0 0.1 0.2 0.3 0.4 0.5 
             // 1.0 1.1 1.2 1.3 1.4 1.5 
             // 2.0 2.1 2.2 2.3 2.4 2.5 
