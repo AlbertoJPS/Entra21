@@ -111,10 +111,12 @@ namespace AlbertoJPSantos
                                 i--;
                                 if (i == -1)
                                 {
+                                   // Console.Write(0);
                                     temp = 1;
                                     break;
                                 }
                             }
+                            Console.Write(1);
                             matriz1[i][j] = 0;
                             temp = 1;
                             break;
@@ -197,10 +199,12 @@ namespace AlbertoJPSantos
                                 i--;
                                 if (i == -1)
                                 {
+                                   // Console.Write(0);
                                     temp = 1;
                                     break;
                                 }
                             }
+                            Console.Write(2);
                             matriz2[i][j] = 0;
                             temp = 1;
                             break;
@@ -283,11 +287,12 @@ namespace AlbertoJPSantos
                                 i--;
                                 if (i == -1)
                                 {
+                                   // Console.Write(0);
                                     temp = 1;
                                     break;
                                 }
                             }
-                            
+                            Console.Write(3);
                             matriz3[i][j] = 0;
                             temp = 1;
                             break;
@@ -365,16 +370,19 @@ namespace AlbertoJPSantos
                         if (matriz4[i][j] == 0)
                         {
                             j--;
+
                             if (j == -1)
                             {
                                 j = 5;
                                 i--;
                                 if (i == -1)
                                 {
+                                   // Console.Write(0);
                                     temp = 1;
                                     break;
                                 }
                             }
+                            Console.Write(4);
                             matriz4[i][j] = 0;
                             temp = 1;
                             break;
@@ -401,13 +409,3 @@ namespace AlbertoJPSantos
         }
     }
 } 
-        // achar um modo de fazer a condicional do Adicionar localizar a matriz especifica a ser mudada
-        // descobrir qual propriedade poderia ser adicionada, e se deixaria o tipo como void
-        //fazer uma função que varre a matriz a procura de um 0 e da break assim q acha, se n achar, fazer o discarte
-
-            // 0.0 0.1 0.2 0.3 0.4 0.5 
-            // 1.0 1.1 1.2 1.3 1.4 1.5 
-            // 2.0 2.1 2.2 2.3 2.4 2.5 
-            // 3.0 3.1 3.2 3.3 3.4 3.5 
-            // 4.0 4.1 4.2 4.3 4.4 4.5 
-            // 5.0 5.1 5.2 5.3 5.4 5.5

@@ -28,12 +28,12 @@ namespace AlbertoJPSantos
         /// <returns></returns>
         public static List<string> GeraEntrada()
         {
-            
+
             List<string> lista = new List<string>();
 
-            for (int i = 0; i < ran.Next(5,12+1); i++)
+            for (int i = 0; i < ran.Next(5, 12 + 1); i++)
             {
-                lista.Add(ran.Next(1, 4+1).ToString());
+                lista.Add(ran.Next(1, 4 + 1).ToString());
             }
 
             lista.Sort();
@@ -46,7 +46,7 @@ namespace AlbertoJPSantos
         /// <returns></returns>
         public static string OrdemDeServico()
         {
-            int escolha = ran.Next(0, 2+1);
+            int escolha = ran.Next(0, 2 + 1);
             if (escolha == 0)
             {
                 escolha = 6;
@@ -72,4 +72,5 @@ namespace AlbertoJPSantos
 
 
     }
+
 }

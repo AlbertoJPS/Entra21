@@ -33,7 +33,7 @@ namespace AlbertoJPSantos
                     Funcoes.Estoque4(1); Console.WriteLine("\n");
                     Console.WriteLine("---------------------------------------------------------------------");
                 }
-                
+
                 ///1º Recebe Carga e organizar estoque -------------------------------------------------
                 ///
 
@@ -80,33 +80,54 @@ namespace AlbertoJPSantos
                 Console.WriteLine("---------------------------------------------------------------------");
                 ///3º Envia carga ---------------------------------------------------------------------
                 ///
+
+                /// Ordem de serviço
+                /// 
                 int cargasOut = Geradores.Qtd();
-                Console.WriteLine("\nSaida de produtos (por carga)\n");
+                
+                
                 for (int i = 0; i < cargasOut; i++)
                 {
                     string saida = Geradores.OrdemDeServico();
+                    int[] vetorCarga = new int[saida.Length];
+                    int[] vetorEnvio = new int[saida.Length];
+                    Console.Write("\nOrdem de Serviço - ");
                     Console.WriteLine(saida);
+                    /// Envio de carga
+                    /// 
+                    Console.Write("Nota de Envio    - " );
+                    int j = 0;
                     foreach (var item in saida)
                     {
+                        string temp = item.ToString();
+                        vetorCarga[j] = Convert.ToInt32(temp);
+                        j++;
+
                         if (item == '1')
                         {
                             Funcoes.Estoque1(3);
+                            
                         }
                         else if (item == '2')
                         {
                             Funcoes.Estoque2(3);
+                            
                         }
                         else if (item == '3')
                         {
                             Funcoes.Estoque3(3);
+                           
                         }
                         else
                         {
                             Funcoes.Estoque4(3);
+                            
                         }
                     }
+                    Console.WriteLine();
                 }
-                Console.WriteLine();
+               
+                
                 
                 ///4º Mostra estoque atualizado ------------------------------------------------------
                 ///
@@ -129,23 +150,3 @@ namespace AlbertoJPSantos
         }
     }
 }
-
-
-
-//    Após isso, coloque todos esses elementos em um vetor de inteiros para envio, 
-//    caso a empresa não tenha algum dos elementosem estoque para fazer a entrega, 
-//    deve-se preencher o que der e o que faltar ignora-se ex:string ordemDeServico = “11111111”; 
-
-//    estoque: 
-//    1 1 1 1 0 0
-//    0 0 0 0 0 0
-//    0 0 0 0 0 0
-//    0 0 0 0 0 0
-//    0 0 0 0 0 0
-//    0 0 0 0 0 0
-
-//    Nesse caso faltam quatro 1 para preencher o vetor, mas o vetor final deve ficar assim :
-//    vetor[0] = 1,vetor[1] = 1,vetor[2] = 1,vetor[3] = 1,vetor[4] = 0,vetor[5] = 0,vetor[6] = 0, vetor[7] = 0
-
-//    Evite ao máximo criar vetores de tamanho desnecessário, como no caso acima que um vetor de 6 elementos daria conta 
-//   (lembre que os vetores tem 6 ou 8 ou 10 elementos)
