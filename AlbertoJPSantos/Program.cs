@@ -129,3 +129,23 @@ namespace AlbertoJPSantos
         }
     }
 }
+
+
+
+//    Após isso, coloque todos esses elementos em um vetor de inteiros para envio, 
+//    caso a empresa não tenha algum dos elementosem estoque para fazer a entrega, 
+//    deve-se preencher o que der e o que faltar ignora-se ex:string ordemDeServico = “11111111”; 
+
+//    estoque: 
+//    1 1 1 1 0 0
+//    0 0 0 0 0 0
+//    0 0 0 0 0 0
+//    0 0 0 0 0 0
+//    0 0 0 0 0 0
+//    0 0 0 0 0 0
+
+//    Nesse caso faltam quatro 1 para preencher o vetor, mas o vetor final deve ficar assim :
+//    vetor[0] = 1,vetor[1] = 1,vetor[2] = 1,vetor[3] = 1,vetor[4] = 0,vetor[5] = 0,vetor[6] = 0, vetor[7] = 0
+
+//    Evite ao máximo criar vetores de tamanho desnecessário, como no caso acima que um vetor de 6 elementos daria conta 
+//   (lembre que os vetores tem 6 ou 8 ou 10 elementos)
