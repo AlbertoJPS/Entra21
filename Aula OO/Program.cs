@@ -309,44 +309,52 @@ namespace Aula_OO
             ///Exc 07
             ///
 
-            List<Alunos> alunos = new List<Alunos>();
+            //List<Alunos> alunos = new List<Alunos>();
 
             
-            for (int i = 0; i < 4; i++)
-            {
-                double media = 0;
-                string resultado;
-                Console.WriteLine("\n\nInsira o nome do aluno");
-                string nome = Console.ReadLine();
-                Console.WriteLine("Insira a Primeira Nota");
-                double nota1 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Insira a Segunda Nota");
-                double nota2 = Convert.ToInt32(Console.ReadLine());
-                Console.WriteLine("Insira a Terceira Nota");
-                double nota3 = Convert.ToInt32(Console.ReadLine());
-                Alunos aluno = new Alunos(nome, nota1, nota2, nota3);
-                media = NotaMedia(nota1, nota2, nota3);
-                alunos.Add(aluno);
+            //for (int i = 0; i < 4; i++)
+            //{
+            //    double media = 0;
+            //    string resultado;
+            //    Console.WriteLine("\n\nInsira o nome do aluno");
+            //    string nome = Console.ReadLine();
+            //    Console.WriteLine("Insira a Primeira Nota");
+            //    double nota1 = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine("Insira a Segunda Nota");
+            //    double nota2 = Convert.ToInt32(Console.ReadLine());
+            //    Console.WriteLine("Insira a Terceira Nota");
+            //    double nota3 = Convert.ToInt32(Console.ReadLine());
+            //    Alunos aluno = new Alunos(nome, nota1, nota2, nota3);
+            //    media = NotaMedia(nota1, nota2, nota3);
+            //    alunos.Add(aluno);
                 
-                Console.WriteLine("\n______________________\n");
-                Console.WriteLine(alunos[i].nome);
-                Console.WriteLine("Média " + media);
-                if (media >= 7)
-                {
-                    Console.ForegroundColor = ConsoleColor.Green;
-                    resultado = "Aprovado";
-                    Console.WriteLine(resultado);
-                    Console.ResetColor();
-                }
-                else
-                {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    resultado = "Reprovado";
-                    Console.WriteLine(resultado);
-                    Console.ResetColor();
-                }
-                Console.WriteLine("______________________");
-            }
+            //    Console.WriteLine("\n______________________\n");
+            //    Console.WriteLine(alunos[i].nome);
+            //    Console.WriteLine("Média " + media);
+            //    if (media >= 7)
+            //    {
+            //        Console.ForegroundColor = ConsoleColor.Green;
+            //        resultado = "Aprovado";
+            //        Console.WriteLine(resultado);
+            //        Console.ResetColor();
+            //    }
+            //    else
+            //    {
+            //        Console.ForegroundColor = ConsoleColor.Red;
+            //        resultado = "Reprovado";
+            //        Console.WriteLine(resultado);
+            //        Console.ResetColor();
+            //    }
+            //    Console.WriteLine("______________________");
+            //}
+
+            /// LISTA 2
+            /// 
+            /// Exc 001
+            /// 
+
+
+
         }
 
         // Funções
