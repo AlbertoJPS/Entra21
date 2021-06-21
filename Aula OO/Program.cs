@@ -283,31 +283,75 @@ namespace Aula_OO
             ///Exc 04
             ///
 
-            List<Estoque> estoque = new List<Estoque>();
+            //List<Estoque> estoque = new List<Estoque>();
 
-            for (int i = 0; i < 3; i++)
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    Console.WriteLine("\n\nInsira o nome do Produto");
+            //    string nome = Console.ReadLine();
+            //    Console.WriteLine("Insira o Preço");
+            //    double preco = double.Parse(Console.ReadLine());
+            //    Console.WriteLine("Insira a Quantidade");
+            //    int quantidade = int.Parse(Console.ReadLine());
+            //    Estoque estq = new Estoque(nome, preco, quantidade);
+            //    estoque.Add(estq);
+            //}
+            //BoobleSort(estoque);
+
+            //Console.WriteLine("\nProdutos em estoque: \n");
+            //for (int i = 0; i < estoque.Count; i++)
+            //{
+            //    Console.WriteLine("\nNome: " + estoque[i].nome);
+            //    Console.WriteLine("Preço: " + estoque[i].preco);
+            //    Console.WriteLine("Quantidade: " + estoque[i].quantidade);
+            //}
+
+            ///Exc 07
+            ///
+
+            List<Alunos> alunos = new List<Alunos>();
+
+            
+            for (int i = 0; i < 4; i++)
             {
-                Console.WriteLine("\n\nInsira o nome do Produto");
+                double media = 0;
+                string resultado;
+                Console.WriteLine("\n\nInsira o nome do aluno");
                 string nome = Console.ReadLine();
-                Console.WriteLine("Insira o Preço");
-                double preco = double.Parse(Console.ReadLine());
-                Console.WriteLine("Insira a Quantidade");
-                int quantidade = int.Parse(Console.ReadLine());
-                Estoque estq = new Estoque(nome, preco, quantidade);
-                estoque.Add(estq);
-            }
-            SortManual(estoque);
-
-            Console.WriteLine("\nProdutos em estoque: \n");
-            for (int i = 0; i < estoque.Count; i++)
-            {
-                Console.WriteLine("\nNome: " + estoque[i].nome);
-                Console.WriteLine("Preço: " + estoque[i].preco);
-                Console.WriteLine("Quantidade: " + estoque[i].quantidade);
+                Console.WriteLine("Insira a Primeira Nota");
+                double nota1 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Insira a Segunda Nota");
+                double nota2 = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine("Insira a Terceira Nota");
+                double nota3 = Convert.ToInt32(Console.ReadLine());
+                Alunos aluno = new Alunos(nome, nota1, nota2, nota3);
+                media = NotaMedia(nota1, nota2, nota3);
+                alunos.Add(aluno);
+                
+                Console.WriteLine("\n______________________\n");
+                Console.WriteLine(alunos[i].nome);
+                Console.WriteLine("Média " + media);
+                if (media >= 7)
+                {
+                    Console.ForegroundColor = ConsoleColor.Green;
+                    resultado = "Aprovado";
+                    Console.WriteLine(resultado);
+                    Console.ResetColor();
+                }
+                else
+                {
+                    Console.ForegroundColor = ConsoleColor.Red;
+                    resultado = "Reprovado";
+                    Console.WriteLine(resultado);
+                    Console.ResetColor();
+                }
+                Console.WriteLine("______________________");
             }
         }
 
-        public static void SortManual(List<Estoque> estoque)
+        // Funções
+
+        public static void BoobleSort(List<Estoque> estoque)
         {
             for (int i = 0; i < estoque.Count; i++)
             {
@@ -322,22 +366,17 @@ namespace Aula_OO
                 }
             }
         }
-        // sort do menor para o maior 
+        public static double NotaMedia(double nota1, double nota2, double nota3)
+        {
+            double media = 0;
 
-        //public static void SortManual(List<Estoque> estoque)
-        //{
-        //    for (int i = 0; i < estoque.Count; i++)
-        //    {
-        //        for (int j = i; j > 0; j--)
-        //        {
-        //            if (estoque[j - 1].quantidade > estoque[j].quantidade)
-        //            {
-        //                Estoque temp = estoque[j];
-        //                estoque[j] = estoque[j - 1];
-        //                estoque[j - 1] = temp;
-        //            }
-        //        }
-        //    }
-        //}
+            media = (nota1 + nota2 + nota3) / 3;
+
+            return media;
+        }
+
+
+
+
     }
 }
