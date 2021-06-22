@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Aula_OO
 {
-    class Funcionario
+    class Funcionario : DadosBancarios
     {
 
         public string Nome { get; set; }
@@ -14,3 +14,4 @@ namespace Aula_OO
         public double Salario { get; set; }
     }
 }
+
