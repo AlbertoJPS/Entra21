@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Aula_OO.Heranca;
+using System;
 using System.Collections.Generic;
 
 namespace Aula_OO
@@ -311,7 +312,7 @@ namespace Aula_OO
 
             //List<Alunos> alunos = new List<Alunos>();
 
-            
+
             //for (int i = 0; i < 4; i++)
             //{
             //    double media = 0;
@@ -327,7 +328,7 @@ namespace Aula_OO
             //    Alunos aluno = new Alunos(nome, nota1, nota2, nota3);
             //    media = NotaMedia(nota1, nota2, nota3);
             //    alunos.Add(aluno);
-                
+
             //    Console.WriteLine("\n______________________\n");
             //    Console.WriteLine(alunos[i].nome);
             //    Console.WriteLine("Média " + media);
@@ -355,13 +356,69 @@ namespace Aula_OO
             /// Exc 003
             /// 
 
+            Empresa emp = new Empresa();
+            List<Funcionario> temp = new List<Funcionario>();
+            for(int i = 0; i < 2; i++)
+            {
+                PreencheFunc(temp);
+            }
+            emp.Funcionarios = temp;
+            while(true)
+            {
+                Console.WriteLine("Olá, seja bem vindo a Casa dos Primos"):
+                Console.WriteLine("1 - Aumento");
+                Console.WriteLine("2 - Demitir");
+                Console.WriteLine("3 - Fechamento");
+                Console.WriteLine("4 - Sair");
+                int escolha = Convert.ToInt32(Console.ReadLine());
+                if (escolha == 1)
+                {
+                    Console.WriteLine("De qual Func. deseja aumentar o salario");
+                    for (int i = 0; i < emp.Funcionarios.Count; i++)
+                    {
+                        Console.WriteLine("{0} - {1}", i + 1, emp.Funcionarios);
+                    }
+                    escolha = Convert.ToInt32(Console.ReadLine()) - 1;
+                    Console.WriteLine("Quantos % de aumento");
+                    double aumento = Convert.ToDouble(Console.ReadLine());
+                    emp.Funcionarios[escolha].Salario *= (aumento / 100);
+                    
+                }
+                else if (escolha == 2)
+                { 
+                
+                }
+                else if (escolha == 3)
+                { 
+                
+                }
+                else if (escolha == 4)
+                { 
+                
+                }
 
 
+            }
 
 
         }
 
         // Funções
+
+        public static void PreencheFunc(List<Funcionario> funcionarios)
+        {
+            Funcionario estagiario = new Funcionario();
+            Console.WriteLine("informações pessoais");
+            estagiario.Nome = Console.ReadLine();
+            estagiario.Cargo = Console.ReadLine();
+            estagiario.Salario = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("dados bancários");
+            estagiario.Conta = Console.ReadLine();
+            estagiario.Saldo = Convert.ToInt32(Console.ReadLine());
+            estagiario.Senha = Console.ReadLine();
+            funcionarios.Add(estagiario);
+        }
+
 
         public static void BoobleSort(List<Estoque> estoque)
         {
