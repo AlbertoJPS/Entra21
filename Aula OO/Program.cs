@@ -357,135 +357,166 @@ namespace Aula_OO
             /// Exc 003
             /// 
 
-            Empresa emp = new Empresa();
-            List<Funcionario> temp2 = new List<Funcionario>()
-            {new Funcionario { Nome = "Jorge", Cargo = "Peão", Salario = 1350.24, Conta = "15547855", Saldo = -624.23, Senha = 1554 },
-            new Funcionario { Nome = "Cleiton", Cargo = "Entregador", Salario = 1624.72, Conta = "35664855", Saldo = 800, Senha = 1337 },
-            new Funcionario { Nome = "Dr. Hamilton", Cargo = "Gerente", Salario = 2215.56, Conta = "48855788", Saldo = 1542.75, Senha = 6522 }};
+            //Empresa emp = new Empresa();
+            //List<Funcionario> temp2 = new List<Funcionario>()
+            //{new Funcionario { Nome = "Jorge", Cargo = "Peão", Salario = 1350.24, Conta = "15547855", Saldo = -624.23, Senha = 1554 },
+            //new Funcionario { Nome = "Cleiton", Cargo = "Entregador", Salario = 1624.72, Conta = "35664855", Saldo = 800, Senha = 1337 },
+            //new Funcionario { Nome = "Dr. Hamilton", Cargo = "Gerente", Salario = 2215.56, Conta = "48855788", Saldo = 1542.75, Senha = 6522 }};
 
-            //temp2.Add(new Funcionario { Nome = "Jorge", Cargo = "Peão", Salario = 1350.24, Conta = "15547855", Saldo = -624.23, Senha = 1554 });
-            //temp2.Add(new Funcionario { Nome = "Cleiton", Cargo = "Entregador", Salario = 1624.72, Conta = "35664855", Saldo = 800, Senha = 1337 });
-            //temp2.Add(new Funcionario { Nome = "Dr. Hamilton", Cargo = "Gerente", Salario = 2215.56, Conta = "48855788", Saldo = 1542.75, Senha = 6522 });
-            emp.Funcionarios = temp2;
+            ////temp2.Add(new Funcionario { Nome = "Jorge", Cargo = "Peão", Salario = 1350.24, Conta = "15547855", Saldo = -624.23, Senha = 1554 });
+            ////temp2.Add(new Funcionario { Nome = "Cleiton", Cargo = "Entregador", Salario = 1624.72, Conta = "35664855", Saldo = 800, Senha = 1337 });
+            ////temp2.Add(new Funcionario { Nome = "Dr. Hamilton", Cargo = "Gerente", Salario = 2215.56, Conta = "48855788", Saldo = 1542.75, Senha = 6522 });
+            //emp.Funcionarios = temp2;
 
 
-            //List<Funcionario> temp = new List<Funcionario>();
-            //for (int i = 0; i < 3; i++) // relembrar de colocar 5
+            ////List<Funcionario> temp = new List<Funcionario>();
+            ////for (int i = 0; i < 3; i++) // relembrar de colocar 5
+            ////{
+            ////    PreencheFunc(temp);
+            ////}
+            ////emp.Funcionarios = temp;
+
+
+            //while (true)
             //{
-            //    PreencheFunc(temp);
+            //    Console.WriteLine("Olá, Seja bem vinda a casa dos Primos");
+            //    Console.WriteLine("1- Aumento");
+            //    Console.WriteLine("2- Demitir");
+            //    Console.WriteLine("3- Fechamento");
+            //    Console.WriteLine("4- Sair");
+            //    int escolha = Convert.ToInt32(CR());
+            //    if (escolha == 1)
+            //    {
+            //        {
+            //            //foreach (var item in emp.Funcionarios)
+            //            //{
+            //            //    Console.WriteLine(item.Nome);
+            //            //}
+            //        }
+            //        Console.WriteLine("De qual deseja aumentar o salário?");
+            //        for (int i = 0; i < emp.Funcionarios.Count; i++)
+            //        {
+            //            Console.WriteLine("{0}- {1}", i + 1, emp.Funcionarios[i].Nome);
+            //        }
+            //        escolha = Convert.ToInt32(CR()) - 1;
+            //        Console.WriteLine("Quantos % de aumento");
+            //        double aumento = Convert.ToDouble(CR());
+            //        emp.Funcionarios[escolha].Salario += (emp.Funcionarios[escolha].Salario * (aumento / 100));
+            //        Console.Write("Conferindo");
+            //        for (int i = 0; i < 4; i++)
+            //        {
+            //            Console.Write("."); Thread.Sleep(500);
+            //        }
+            //        Console.WriteLine("\n" + emp.Funcionarios[escolha].Salario);
+            //        Console.ReadLine();
+            //        Console.Clear();
+            //    }
+            //    else if (escolha == 2)
+            //    {
+            //        Console.WriteLine("De qual deseja demitir?");
+            //        for (int i = 0; i < emp.Funcionarios.Count; i++)
+            //        {
+            //            Console.WriteLine("{0}- {1}", i + 1, emp.Funcionarios[i].Nome);
+            //        }
+            //        escolha = Convert.ToInt32(CR()) - 1;
+            //        emp.Funcionarios.RemoveAt(escolha);
+            //        Console.Clear();
+            //    }
+            //    else if (escolha == 3)
+            //    {
+            //        /* Peão R$ 4.785,26
+            //         * Entregador R$ 5.324,82
+            //         * Gerente R$ 2.485,64 x qtd. de (Peão + Entregador)*/
+            //        double faturamento = 0;
+            //        foreach (var item in emp.Funcionarios)
+            //        {
+            //            if (item.Cargo == "Peão")
+            //            {
+            //                faturamento += 4785.26;
+            //            }
+            //            else if (item.Cargo == "Entregador")
+            //            {
+            //                faturamento += 5324.82;
+            //            }
+            //            else
+            //            {
+            //                foreach (var item2 in emp.Funcionarios)
+            //                {
+            //                    if (item2.Cargo != "Gerente")
+            //                    {
+            //                        faturamento += 2485.64;
+            //                    }
+            //                }
+            //            }
+            //        }
+            //        emp.Saldo += faturamento;
+
+            //        for (int i = 0; i < emp.Funcionarios.Count; i++)
+            //        {
+            //            emp.Funcionarios[i].Saldo += emp.Funcionarios[i].Salario;
+            //            emp.Saldo -= emp.Funcionarios[i].Salario;
+            //            faturamento -= emp.Funcionarios[i].Salario;
+            //        }
+
+            //        if (faturamento < 0)
+            //        {
+            //            Console.WriteLine("VIXE, deu preju :(");
+            //            Console.WriteLine(faturamento);
+            //        }
+            //        else
+            //        {
+            //            Console.WriteLine("Deu lucro /o/");
+            //            Console.WriteLine(faturamento);
+            //        }
+            //        Console.ReadLine();
+            //        Console.Clear();
+            //    }
+            //    else if (escolha == 4)
+            //    {
+            //        Console.WriteLine("Obrigado por usar o Geretron 3000®");
+            //        break;
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("Opçãum inválída");
+            //    }
+
             //}
-            //emp.Funcionarios = temp;
 
+            /// Herança Multinível Lista 1
+            /// 
+            /// Exc 01
+            /// 
 
-            while (true)
+            Empresa emp = new Empresa();
+            Console.WriteLine("Preencha os dados da empresa");
+            emp.Nome = CR();
+            emp.Idade = Convert.ToInt32(CR());
+            emp.Saldo = Convert.ToInt32(CR());
+            emp.QtdFuncionarios = Convert.ToInt32(CR());
+            emp.Cnpj = CR();
+            emp.Rua = CR();
+            emp.Cep = CR();
+            emp.Cidade = CR();
+            emp.Estado = CR();
+
+            if (emp.QtdFuncionarios > 4)
             {
-                Console.WriteLine("Olá, Seja bem vinda a casa dos Primos");
-                Console.WriteLine("1- Aumento");
-                Console.WriteLine("2- Demitir");
-                Console.WriteLine("3- Fechamento");
-                Console.WriteLine("4- Sair");
-                int escolha = Convert.ToInt32(CR());
-                if (escolha == 1)
-                {
-                    {
-                        //foreach (var item in emp.Funcionarios)
-                        //{
-                        //    Console.WriteLine(item.Nome);
-                        //}
-                    }
-                    Console.WriteLine("De qual deseja aumentar o salário?");
-                    for (int i = 0; i < emp.Funcionarios.Count; i++)
-                    {
-                        Console.WriteLine("{0}- {1}", i + 1, emp.Funcionarios[i].Nome);
-                    }
-                    escolha = Convert.ToInt32(CR()) - 1;
-                    Console.WriteLine("Quantos % de aumento");
-                    double aumento = Convert.ToDouble(CR());
-                    emp.Funcionarios[escolha].Salario += (emp.Funcionarios[escolha].Salario * (aumento / 100));
-                    Console.Write("Conferindo");
-                    for (int i = 0; i < 4; i++)
-                    {
-                        Console.Write("."); Thread.Sleep(500);
-                    }
-                    Console.WriteLine("\n" + emp.Funcionarios[escolha].Salario);
-                    Console.ReadLine();
-                    Console.Clear();
-                }
-                else if (escolha == 2)
-                {
-                    Console.WriteLine("De qual deseja demitir?");
-                    for (int i = 0; i < emp.Funcionarios.Count; i++)
-                    {
-                        Console.WriteLine("{0}- {1}", i + 1, emp.Funcionarios[i].Nome);
-                    }
-                    escolha = Convert.ToInt32(CR()) - 1;
-                    emp.Funcionarios.RemoveAt(escolha);
-                    Console.Clear();
-                }
-                else if (escolha == 3)
-                {
-                    /* Peão R$ 4.785,26
-                     * Entregador R$ 5.324,82
-                     * Gerente R$ 2.485,64 x qtd. de (Peão + Entregador)*/
-                    double faturamento = 0;
-                    foreach (var item in emp.Funcionarios)
-                    {
-                        if (item.Cargo == "Peão")
-                        {
-                            faturamento += 4785.26;
-                        }
-                        else if (item.Cargo == "Entregador")
-                        {
-                            faturamento += 5324.82;
-                        }
-                        else
-                        {
-                            foreach (var item2 in emp.Funcionarios)
-                            {
-                                if (item2.Cargo != "Gerente")
-                                {
-                                    faturamento += 2485.64;
-                                }
-                            }
-                        }
-                    }
-                    emp.Saldo += faturamento;
-
-                    for (int i = 0; i < emp.Funcionarios.Count; i++)
-                    {
-                        emp.Funcionarios[i].Saldo += emp.Funcionarios[i].Salario;
-                        emp.Saldo -= emp.Funcionarios[i].Salario;
-                        faturamento -= emp.Funcionarios[i].Salario;
-                    }
-
-                    if (faturamento < 0)
-                    {
-                        Console.WriteLine("VIXE, deu preju :(");
-                        Console.WriteLine(faturamento);
-                    }
-                    else
-                    {
-                        Console.WriteLine("Deu lucro /o/");
-                        Console.WriteLine(faturamento);
-                    }
-                    Console.ReadLine();
-                    Console.Clear();
-                }
-                else if (escolha == 4)
-                {
-                    Console.WriteLine("Obrigado por usar o Geretron 3000®");
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("Opçãum inválída");
-                }
-
+                Console.WriteLine("{0} {1} {2}" + emp.Nome, emp.Idade, emp.Cnpj);
+                Console.WriteLine("{0:c} {1}" + emp.Saldo, emp.QtdFuncionarios);
+                Console.WriteLine("{0} {1} {2}" + emp.Rua, emp.Cep, emp.Cidade);
+                Console.WriteLine("{0} " + emp.Estado);
             }
+
+            ///Exc 02
+            ///
+
+
 
         }
 
         // Funções
+
         public static string CR()
         {
             return Console.ReadLine();
@@ -503,8 +534,6 @@ namespace Aula_OO
             estagiario.Senha = Convert.ToInt32(Console.ReadLine());
             funcionarios.Add(estagiario);
         }
-
-
         public static void BoobleSort(List<Estoque> estoque)
         {
             for (int i = 0; i < estoque.Count; i++)

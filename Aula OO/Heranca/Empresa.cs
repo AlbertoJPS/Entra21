@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace Aula_OO.Heranca
 {
-    class Empresa : DadosBancarios
+    class Empresa : Dados //: DadosBancarios
     {
-        public List<Funcionario> Funcionarios { get; set; }
+        //public List<Funcionario> Funcionarios { get; set; }
+        public double Saldo { get; set; }
+        public int QtdFuncionarios { get; set; }
 
     }
 }
