@@ -1,0 +1,16 @@
+H:\resources.pak\Desafio_AlbertoJPSantos\bin\Debug\net5.0\Desafio_AlbertoJPSantos.exe
+H:\resources.pak\Desafio_AlbertoJPSantos\bin\Debug\net5.0\Desafio_AlbertoJPSantos.deps.json
+H:\resources.pak\Desafio_AlbertoJPSantos\bin\Debug\net5.0\Desafio_AlbertoJPSantos.runtimeconfig.json
+H:\resources.pak\Desafio_AlbertoJPSantos\bin\Debug\net5.0\Desafio_AlbertoJPSantos.runtimeconfig.dev.json
+H:\resources.pak\Desafio_AlbertoJPSantos\bin\Debug\net5.0\Desafio_AlbertoJPSantos.dll
+H:\resources.pak\Desafio_AlbertoJPSantos\bin\Debug\net5.0\ref\Desafio_AlbertoJPSantos.dll
+H:\resources.pak\Desafio_AlbertoJPSantos\bin\Debug\net5.0\Desafio_AlbertoJPSantos.pdb
+H:\resources.pak\Desafio_AlbertoJPSantos\obj\Debug\net5.0\Desafio_AlbertoJPSantos.csprojAssemblyReference.cache
+H:\resources.pak\Desafio_AlbertoJPSantos\obj\Debug\net5.0\Desafio_AlbertoJPSantos.GeneratedMSBuildEditorConfig.editorconfig
+H:\resources.pak\Desafio_AlbertoJPSantos\obj\Debug\net5.0\Desafio_AlbertoJPSantos.AssemblyInfoInputs.cache
+H:\resources.pak\Desafio_AlbertoJPSantos\obj\Debug\net5.0\Desafio_AlbertoJPSantos.AssemblyInfo.cs
+H:\resources.pak\Desafio_AlbertoJPSantos\obj\Debug\net5.0\Desafio_AlbertoJPSantos.csproj.CoreCompileInputs.cache
+H:\resources.pak\Desafio_AlbertoJPSantos\obj\Debug\net5.0\Desafio_AlbertoJPSantos.dll
+H:\resources.pak\Desafio_AlbertoJPSantos\obj\Debug\net5.0\ref\Desafio_AlbertoJPSantos.dll
+H:\resources.pak\Desafio_AlbertoJPSantos\obj\Debug\net5.0\Desafio_AlbertoJPSantos.pdb
+H:\resources.pak\Desafio_AlbertoJPSantos\obj\Debug\net5.0\Desafio_AlbertoJPSantos.genruntimeconfig.cache
