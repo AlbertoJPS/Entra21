@@ -15,25 +15,40 @@ namespace Desafio_AlbertoJPSantos.Final
        {
             Baralho baralho = new Baralho();
             baralho.EmbaralharBaralho();
-
+            int p = 0;
             foreach (Cartas cartas in baralho.BaralhoCartas)
             {
-                if (cartas.Naipe == " ♦ Ouro ♦" || cartas.Naipe == " ♥ Copas ♥")
+                Console.WriteLine("\nVocê deseja pegar uma carta? Sim = S / Não = N");
+                string escolha = Console.ReadLine();
+                if (escolha == "s" || escolha == "S")
                 {
-                    Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine(cartas.Nome + " -" + cartas.Naipe + " | Pontos = " + Ponto());
-                    Console.ResetColor();
+                    if (cartas.Naipe == " ♦ Ouro ♦  " || cartas.Naipe == " ♥ Copas ♥  ")
+                    {
+                        Console.BackgroundColor = ConsoleColor.White;
+                        Console.ForegroundColor = ConsoleColor.Red;
+                        Console.Write(cartas.Nome + " -" + cartas.Naipe);
+                        Console.ResetColor();
+                        p = baralho.Pontos(cartas);
+                        Console.WriteLine(" | Pontos = " + p);
+                        Cartas primeira = baralho.PegarPrimeiraCarta();
+                    }
+                    else
+                    {
+                        Console.BackgroundColor = ConsoleColor.White;
+                        Console.ForegroundColor = ConsoleColor.Black;
+                        Console.Write(cartas.Nome + "-" + cartas.Naipe);
+                        Console.ResetColor();
+                        p = baralho.Pontos(cartas);
+                        Console.WriteLine(" | Pontos = " + p);
+                        Cartas primeira = baralho.PegarPrimeiraCarta();
+                    }
                 }
-                else
+                if (escolha == "n" || escolha == "N")
                 {
-                    Console.WriteLine(cartas.Nome + "-" + cartas.Naipe + " | Pontos = " + cartas.);
+                    break;                
                 }
-                Console.ReadLine();
             }
-            Console.WriteLine("");
-            Console.WriteLine("->Pega primeira carta");
-            Cartas primeira = baralho.PegarPrimeiraCarta();
-            Console.WriteLine(primeira.Nome + "-" + primeira.Naipe);
+           
             Console.ReadLine();
         }
 

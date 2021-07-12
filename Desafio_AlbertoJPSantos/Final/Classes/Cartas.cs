@@ -11,8 +11,8 @@ namespace Desafio_AlbertoJPSantos.Classes
     {
         public string Nome { get; set; }
         public string Naipe { get; set; }
-        public List<Cartas> BaralhoCartas { get; set; }
+        //public List<Cartas> BaralhoCartas { get; set; }
 
-        public int Ponto { get; set; }
+        //public int Ponto { get; set; }
     }
 }
