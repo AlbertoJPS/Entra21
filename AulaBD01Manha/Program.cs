@@ -61,7 +61,7 @@ namespace AulaBD01Manha
             //---------------------------------------------------------------------------------------------
             // Exc 02
 
-            for (int i = 0; i < 3; i ++)
+            for (int i = 0; i < 3; i++)
             {
                 Console.WriteLine("Insira o {0}° Cachorro",i+1);
                 string nome = Console.ReadLine();
