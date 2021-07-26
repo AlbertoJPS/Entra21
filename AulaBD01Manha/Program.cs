@@ -14,6 +14,8 @@ namespace AulaBD01Manha
             SqlConnection conn = new SqlConnection("Data Source = BUE205D94; Initial Catalog = DBTurmaManha; User ID = guest01; Password = @Senac2021");
             SqlCommand cmd;
             //conn.ConnectionString = "Data Source=BUE205D39;Initial Catalog=tempdb;Persist Security Info=True;User ID=guest01;Password=***********";
+
+            //-----------------------------------------------------------------------------------------------
             // exec 01
 
             //for (int i = 0; i < 2; i++)
@@ -56,7 +58,7 @@ namespace AulaBD01Manha
             //}
             //dr.Close();
             //conn.Close();
-
+            //---------------------------------------------------------------------------------------------
             // Exc 02
 
             for (int i = 0; i < 3; i ++)
@@ -65,13 +67,30 @@ namespace AulaBD01Manha
                 string nome = Console.ReadLine();
                 string nomeDoDono = Console.ReadLine();
                 string telefoneDoDono = Console.ReadLine();
-                string insert = $"INSERT into dbo.Cachorro(Nome, NomeDoDono, TelefoneDoDono) value('{nome}','{nomeDoDono}','{telefoneDoDono}')";
+                string insert = $"INSERT into dbo.Cachorro (Nome,NomeDoDono,TelefoneDoDono) value('{nome}','{nomeDoDono}','{telefoneDoDono}')";
                 cmd = new SqlCommand(insert, conn);
                 conn.Open();
                 cmd.ExecuteNonQuery();
                 conn.Close();
             }
+            string select = "SELECT * from dbo.Cachorro";
+            //string select = "SELECT * from dbo.Cachorro WHERE idCachorro > 2";
+            //string select = "SELECT * from dbo.Cachorro WHERE nome LIKE '%lu%'";  e NOT LIKE
+            cmd = new SqlCommand(select, conn);
+            conn.Open();
+            SqlDataReader dr = cmd.ExecuteReader();
 
+            while (dr.Read())
+            {
+                Console.WriteLine(dr["IdCachorro"]);
+                Console.WriteLine(dr[1]);
+                Console.WriteLine(dr[2]);
+                Console.WriteLine(dr[3]);
+                Console.WriteLine("---------------");
+            }
+
+            dr.Close();
+            conn.Close();
 
             // Exc 03
 
