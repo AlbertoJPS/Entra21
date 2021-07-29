@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsExc
 {
-    partial class Form2
+    partial class CadastroUsuario
     {
         /// <summary>
         /// Required designer variable.
@@ -36,19 +36,20 @@ namespace WindowsFormsExc
             this.txtBoxPassword = new System.Windows.Forms.TextBox();
             this.buttonConfirm = new System.Windows.Forms.Button();
             this.buttonBack = new System.Windows.Forms.Button();
+            this.buttonLimpar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblSingUp
             // 
             this.lblSingUp.AutoSize = true;
             this.lblSingUp.BackColor = System.Drawing.Color.Transparent;
-            this.lblSingUp.Font = new System.Drawing.Font("Magneto", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSingUp.Font = new System.Drawing.Font("Magneto", 15.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSingUp.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblSingUp.Location = new System.Drawing.Point(54, 29);
+            this.lblSingUp.Location = new System.Drawing.Point(1, 29);
             this.lblSingUp.Name = "lblSingUp";
-            this.lblSingUp.Size = new System.Drawing.Size(125, 32);
+            this.lblSingUp.Size = new System.Drawing.Size(244, 25);
             this.lblSingUp.TabIndex = 0;
-            this.lblSingUp.Text = "SingUp";
+            this.lblSingUp.Text = "Cadastro de Usuário";
             // 
             // lblLogin
             // 
@@ -56,7 +57,7 @@ namespace WindowsFormsExc
             this.lblLogin.BackColor = System.Drawing.Color.Transparent;
             this.lblLogin.Font = new System.Drawing.Font("Magneto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLogin.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblLogin.Location = new System.Drawing.Point(38, 87);
+            this.lblLogin.Location = new System.Drawing.Point(41, 79);
             this.lblLogin.Name = "lblLogin";
             this.lblLogin.Size = new System.Drawing.Size(73, 24);
             this.lblLogin.TabIndex = 1;
@@ -68,7 +69,7 @@ namespace WindowsFormsExc
             this.lblPassword.BackColor = System.Drawing.Color.Transparent;
             this.lblPassword.Font = new System.Drawing.Font("Magneto", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPassword.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblPassword.Location = new System.Drawing.Point(41, 157);
+            this.lblPassword.Location = new System.Drawing.Point(44, 149);
             this.lblPassword.Name = "lblPassword";
             this.lblPassword.Size = new System.Drawing.Size(109, 24);
             this.lblPassword.TabIndex = 2;
@@ -76,16 +77,16 @@ namespace WindowsFormsExc
             // 
             // txtBoxLogin
             // 
-            this.txtBoxLogin.Location = new System.Drawing.Point(42, 114);
+            this.txtBoxLogin.Location = new System.Drawing.Point(45, 106);
             this.txtBoxLogin.Name = "txtBoxLogin";
             this.txtBoxLogin.Size = new System.Drawing.Size(160, 20);
             this.txtBoxLogin.TabIndex = 3;
             // 
             // txtBoxPassword
             // 
-            this.txtBoxPassword.Location = new System.Drawing.Point(45, 184);
+            this.txtBoxPassword.Location = new System.Drawing.Point(48, 176);
             this.txtBoxPassword.Name = "txtBoxPassword";
-            this.txtBoxPassword.Size = new System.Drawing.Size(160, 20);
+            this.txtBoxPassword.Size = new System.Drawing.Size(157, 20);
             this.txtBoxPassword.TabIndex = 4;
             // 
             // buttonConfirm
@@ -93,7 +94,7 @@ namespace WindowsFormsExc
             this.buttonConfirm.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.buttonConfirm.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonConfirm.ForeColor = System.Drawing.Color.DarkGreen;
-            this.buttonConfirm.Location = new System.Drawing.Point(45, 245);
+            this.buttonConfirm.Location = new System.Drawing.Point(48, 244);
             this.buttonConfirm.Name = "buttonConfirm";
             this.buttonConfirm.Size = new System.Drawing.Size(75, 23);
             this.buttonConfirm.TabIndex = 5;
@@ -103,10 +104,10 @@ namespace WindowsFormsExc
             // 
             // buttonBack
             // 
-            this.buttonBack.BackColor = System.Drawing.Color.Salmon;
+            this.buttonBack.BackColor = System.Drawing.Color.SkyBlue;
             this.buttonBack.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.buttonBack.ForeColor = System.Drawing.Color.DarkRed;
-            this.buttonBack.Location = new System.Drawing.Point(130, 245);
+            this.buttonBack.ForeColor = System.Drawing.SystemColors.HotTrack;
+            this.buttonBack.Location = new System.Drawing.Point(83, 273);
             this.buttonBack.Name = "buttonBack";
             this.buttonBack.Size = new System.Drawing.Size(75, 23);
             this.buttonBack.TabIndex = 6;
@@ -114,12 +115,25 @@ namespace WindowsFormsExc
             this.buttonBack.UseVisualStyleBackColor = false;
             this.buttonBack.Click += new System.EventHandler(this.buttonBack_Click);
             // 
-            // Form2
+            // buttonLimpar
+            // 
+            this.buttonLimpar.BackColor = System.Drawing.Color.Salmon;
+            this.buttonLimpar.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLimpar.ForeColor = System.Drawing.Color.DarkRed;
+            this.buttonLimpar.Location = new System.Drawing.Point(129, 244);
+            this.buttonLimpar.Name = "buttonLimpar";
+            this.buttonLimpar.Size = new System.Drawing.Size(75, 23);
+            this.buttonLimpar.TabIndex = 7;
+            this.buttonLimpar.Text = "Limpar";
+            this.buttonLimpar.UseVisualStyleBackColor = false;
+            // 
+            // CadastroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsExc.Properties.Resources.colorful_razer_rgb_hd_wallpaper_preview;
             this.ClientSize = new System.Drawing.Size(247, 305);
+            this.Controls.Add(this.buttonLimpar);
             this.Controls.Add(this.buttonBack);
             this.Controls.Add(this.buttonConfirm);
             this.Controls.Add(this.txtBoxPassword);
@@ -127,7 +141,7 @@ namespace WindowsFormsExc
             this.Controls.Add(this.lblPassword);
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.lblSingUp);
-            this.Name = "Form2";
+            this.Name = "CadastroUsuario";
             this.Text = "Form2";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -143,5 +157,6 @@ namespace WindowsFormsExc
         private System.Windows.Forms.TextBox txtBoxPassword;
         private System.Windows.Forms.Button buttonConfirm;
         private System.Windows.Forms.Button buttonBack;
+        private System.Windows.Forms.Button buttonLimpar;
     }
 }

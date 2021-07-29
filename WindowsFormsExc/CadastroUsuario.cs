@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsExc
 {
-    public partial class Form2 : Form
+    public partial class CadastroUsuario : Form
     {
         private SqlConnection conn = new SqlConnection(@"Data Source=entra21serv.database.windows.net,1433;Initial Catalog=ExcEntra21;Persist Security Info=True;User ID=adm;Password=13062005x#");
         SqlCommand cmd;
-        public Form2()
+        public CadastroUsuario()
         {
             InitializeComponent();
         }
@@ -35,7 +35,7 @@ namespace WindowsFormsExc
 
         private void buttonBack_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            Login form1 = new Login();
             this.FindForm().Hide();
             form1.Show();
         }

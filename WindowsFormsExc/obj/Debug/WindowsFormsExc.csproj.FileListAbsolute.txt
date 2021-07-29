@@ -2,10 +2,13 @@ H:\resources.pak\WindowsFormsExc\bin\Debug\WindowsFormsExc.exe.config
 H:\resources.pak\WindowsFormsExc\bin\Debug\WindowsFormsExc.exe
 H:\resources.pak\WindowsFormsExc\bin\Debug\WindowsFormsExc.pdb
 H:\resources.pak\WindowsFormsExc\obj\Debug\WindowsFormsExc.csprojAssemblyReference.cache
-H:\resources.pak\WindowsFormsExc\obj\Debug\WindowsFormsExc.Form1.resources
 H:\resources.pak\WindowsFormsExc\obj\Debug\WindowsFormsExc.Properties.Resources.resources
 H:\resources.pak\WindowsFormsExc\obj\Debug\WindowsFormsExc.csproj.GenerateResource.cache
 H:\resources.pak\WindowsFormsExc\obj\Debug\WindowsFormsExc.csproj.CoreCompileInputs.cache
 H:\resources.pak\WindowsFormsExc\obj\Debug\WindowsFormsExc.exe
 H:\resources.pak\WindowsFormsExc\obj\Debug\WindowsFormsExc.pdb
-H:\resources.pak\WindowsFormsExc\obj\Debug\WindowsFormsExc.Form2.resources
+H:\resources.pak\WindowsFormsExc\obj\Debug\WindowsFormsExc.Login.resources
+H:\resources.pak\WindowsFormsExc\obj\Debug\WindowsFormsExc.CadastroUsuario.resources
+H:\resources.pak\WindowsFormsExc\obj\Debug\WindowsFormsExc.CadastroProduto.resources
+H:\resources.pak\WindowsFormsExc\obj\Debug\WindowsFormsExc.Home.resources
+H:\resources.pak\WindowsFormsExc\obj\Debug\WindowsFormsExc.Produto.resources

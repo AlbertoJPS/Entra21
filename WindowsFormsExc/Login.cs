@@ -11,11 +11,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsExc
 {
-    public partial class Form1 : Form
+    public partial class Login : Form
     { 
             private SqlConnection conn = new SqlConnection(@"Data Source=entra21serv.database.windows.net,1433;Initial Catalog=ExcEntra21;Persist Security Info=True;User ID=adm;Password=13062005x#"); 
             SqlCommand cmd;
-        public Form1()
+        public Login()
         {
             InitializeComponent();
         }
@@ -31,6 +31,9 @@ namespace WindowsFormsExc
                 if (txtBoxSenha.Text == dr["PasswordKey"].ToString())
                 {
                     MessageBox.Show("Login Successful");
+                    Home home = new Home();
+                    this.FindForm().Hide();
+                    home.Show();
                 }
                 else 
                 {
@@ -49,7 +52,7 @@ namespace WindowsFormsExc
 
         private void buttonSingUp_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            CadastroUsuario form2 = new CadastroUsuario();
             this.FindForm().Hide();
             form2.Show();
         }
