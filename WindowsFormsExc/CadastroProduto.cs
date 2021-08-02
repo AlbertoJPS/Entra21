@@ -57,21 +57,39 @@ namespace WindowsFormsExc
 
         private void CadastroProduto_Load(object sender, EventArgs e)
         {
-            
+
             this.produtoTableAdapter.Fill(this.excEntra21DataSet.Produto);
-           
+
 
         }
 
         private void buttonRecarregar_Click(object sender, EventArgs e)
-        {
-            //dataGridView1.Refresh();
+        {           
+            
+            //BindingSource sr = new BindingSource();
+            //sr.DataSource = GetData("SELECT * from dbo.Produto");
+            //dataGridView2.DataSource = sr;
+
+            dataGridView2.DataSource = GetData("SELECT * from dbo.Produto");
+
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private DataTable GetData(string sqlCommand)
         {
+            string connectionString = conn.ConnectionString;
 
+            SqlConnection northwindConnection = new SqlConnection(connectionString);
+
+            SqlCommand command = new SqlCommand(sqlCommand, northwindConnection);
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            adapter.SelectCommand = command;
+
+            DataTable table = new DataTable();
+            table.Locale = System.Globalization.CultureInfo.InvariantCulture;
+            adapter.Fill(table);
+
+            return table;
         }
     }
 }

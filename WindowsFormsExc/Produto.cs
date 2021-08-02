@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -12,6 +13,8 @@ namespace WindowsFormsExc
 {
     public partial class Produto : Form
     {
+        private SqlConnection conn = new SqlConnection(@"Data Source=entra21serv.database.windows.net,1433;Initial Catalog=ExcEntra21;Persist Security Info=True;User ID=adm;Password=13062005x#");
+        SqlCommand cmd;
         public Produto()
         {
             InitializeComponent();
@@ -37,9 +40,26 @@ namespace WindowsFormsExc
 
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void buttonRecarregar_Click(object sender, EventArgs e)
         {
 
+            dataGridView1.DataSource = GetData("SELECT * from dbo.Produto");
+        }
+        private DataTable GetData(string sqlCommand)
+        {
+            string connectionString = conn.ConnectionString;
+
+            SqlConnection northwindConnection = new SqlConnection(connectionString);
+
+            SqlCommand command = new SqlCommand(sqlCommand, northwindConnection);
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            adapter.SelectCommand = command;
+
+            DataTable table = new DataTable();
+            table.Locale = System.Globalization.CultureInfo.InvariantCulture;
+            adapter.Fill(table);
+
+            return table;
         }
     }
 }

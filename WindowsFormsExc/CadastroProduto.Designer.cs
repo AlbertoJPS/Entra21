@@ -49,18 +49,18 @@ namespace WindowsFormsExc
             this.excEntra21DataSet = new WindowsFormsExc.ExcEntra21DataSet();
             this.produtoTableAdapter = new WindowsFormsExc.ExcEntra21DataSetTableAdapters.ProdutoTableAdapter();
             this.buttonRecarregar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.excEntra21DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
             this.produtoBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.excEntra21DataSetBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.excEntra21DataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.excEntra21DataSetBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.excEntra21DataSetBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblNome
@@ -204,12 +204,12 @@ namespace WindowsFormsExc
             this.buttonRecarregar.UseVisualStyleBackColor = false;
             this.buttonRecarregar.Click += new System.EventHandler(this.buttonRecarregar_Click);
             // 
-            // dataGridView1
+            // dataGridView2
             // 
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.dataGridView1.AutoGenerateColumns = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
+            this.dataGridView2.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView2.AutoGenerateColumns = false;
+            this.dataGridView2.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -217,14 +217,14 @@ namespace WindowsFormsExc
             dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
-            this.dataGridView1.DataSource = this.produtoBindingSource1;
+            this.dataGridView2.DataSource = this.produtoBindingSource1;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -232,9 +232,9 @@ namespace WindowsFormsExc
             dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dataGridView1.Location = new System.Drawing.Point(268, 17);
-            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView2.Location = new System.Drawing.Point(268, 17);
+            this.dataGridView2.Name = "dataGridView2";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -242,19 +242,19 @@ namespace WindowsFormsExc
             dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
-            this.dataGridView1.Size = new System.Drawing.Size(443, 276);
-            this.dataGridView1.TabIndex = 13;
-            // 
-            // excEntra21DataSetBindingSource
-            // 
-            this.excEntra21DataSetBindingSource.DataSource = this.excEntra21DataSet;
-            this.excEntra21DataSetBindingSource.Position = 0;
+            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView2.Size = new System.Drawing.Size(443, 276);
+            this.dataGridView2.TabIndex = 13;
             // 
             // produtoBindingSource1
             // 
             this.produtoBindingSource1.DataMember = "Produto";
             this.produtoBindingSource1.DataSource = this.excEntra21DataSetBindingSource;
+            // 
+            // excEntra21DataSetBindingSource
+            // 
+            this.excEntra21DataSetBindingSource.DataSource = this.excEntra21DataSet;
+            this.excEntra21DataSetBindingSource.Position = 0;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -287,7 +287,7 @@ namespace WindowsFormsExc
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsExc.Properties.Resources.colorful_razer_rgb_hd_wallpaper_preview;
             this.ClientSize = new System.Drawing.Size(722, 305);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.buttonRecarregar);
             this.Controls.Add(this.lblEstoque);
             this.Controls.Add(this.buttonLimpar);
@@ -305,9 +305,9 @@ namespace WindowsFormsExc
             this.Load += new System.EventHandler(this.CadastroProduto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.excEntra21DataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.excEntra21DataSetBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.produtoBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.excEntra21DataSetBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -334,12 +334,12 @@ namespace WindowsFormsExc
         private System.Windows.Forms.DataGridViewTextBoxColumn nomeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn precoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn qtdEstoqueDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dataGridView2;
         private System.Windows.Forms.BindingSource excEntra21DataSetBindingSource;
+        private System.Windows.Forms.BindingSource produtoBindingSource1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.BindingSource produtoBindingSource1;
     }
 }

@@ -69,7 +69,7 @@ namespace WindowsFormsExc
             this.txtBoxLogin.Location = new System.Drawing.Point(42, 51);
             this.txtBoxLogin.Name = "txtBoxLogin";
             this.txtBoxLogin.Size = new System.Drawing.Size(160, 20);
-            this.txtBoxLogin.TabIndex = 2;
+            this.txtBoxLogin.TabIndex = 0;
             // 
             // buttonSingIn
             // 
@@ -104,7 +104,7 @@ namespace WindowsFormsExc
             this.txtBoxSenha.Name = "txtBoxSenha";
             this.txtBoxSenha.PasswordChar = '*';
             this.txtBoxSenha.Size = new System.Drawing.Size(157, 20);
-            this.txtBoxSenha.TabIndex = 6;
+            this.txtBoxSenha.TabIndex = 1;
             // 
             // buttonSingUp
             // 
@@ -131,7 +131,7 @@ namespace WindowsFormsExc
             this.label1.TabIndex = 8;
             this.label1.Text = "Não tem uma conta?";
             // 
-            // Form1
+            // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -145,7 +145,7 @@ namespace WindowsFormsExc
             this.Controls.Add(this.txtBoxLogin);
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblLogin);
-            this.Name = "Form1";
+            this.Name = "Login";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
