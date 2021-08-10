@@ -13,8 +13,7 @@ namespace WindowsFormsExc
 {
     public partial class CadastroProduto : Form
     {
-        private SqlConnection conn = new SqlConnection(@"Data Source=entra21serv.database.windows.net,1433;Initial Catalog=ExcEntra21;Persist Security Info=True;User ID=adm;Password=13062005x#");
-        SqlCommand cmd;
+
         public CadastroProduto()
         {
             InitializeComponent();
@@ -29,10 +28,9 @@ namespace WindowsFormsExc
             if (nome != null || preco != null || qtdEstoque != null)
             {
                 string insert = $"INSERT into dbo.Produto (Nome,Preco,QtdEstoque) values ('{nome}','{preco}','{qtdEstoque}')";
-                cmd = new SqlCommand(insert, conn);
-                conn.Open();
-                cmd.ExecuteNonQuery();
-                conn.Close();
+                SqlCommand cmd = new SqlCommand(insert, DbConncetion.Connection);
+                DbConncetion.Connection.Open();
+                DbConncetion.Connection.Close();
                 MessageBox.Show("Produto Salvo");
             }
             else
@@ -77,7 +75,7 @@ namespace WindowsFormsExc
 
         private DataTable GetData(string sqlCommand)
         {
-            string connectionString = conn.ConnectionString;
+            string connectionString = DbConncetion.Connection.ConnectionString;
 
             SqlConnection northwindConnection = new SqlConnection(connectionString);
 

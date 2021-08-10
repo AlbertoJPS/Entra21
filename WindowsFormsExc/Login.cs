@@ -12,25 +12,26 @@ using System.Windows.Forms;
 namespace WindowsFormsExc
 {
     public partial class Login : Form
-    { 
-            private SqlConnection conn = new SqlConnection(@"Data Source=entra21serv.database.windows.net,1433;Initial Catalog=ExcEntra21;Persist Security Info=True;User ID=adm;Password=13062005x#"); 
-            SqlCommand cmd;
+    {
+
         public Login()
         {
             InitializeComponent();
         }
-
+        //public string Nome {get; set;}
+        public static string Nome { get; set; }
         private void buttonSingIn_Click(object sender, EventArgs e)
         {
             string select = $"SELECT * from dbo.Cadastro WHERE LoginUser = '{txtBoxLogin.Text}'";
-            SqlCommand cmd = new SqlCommand(select, conn);
-            conn.Open();
+            SqlCommand cmd = new SqlCommand(select, DbConncetion.Connection);
+            DbConncetion.Connection.Open();
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
                 if (txtBoxSenha.Text == dr["PasswordKey"].ToString())
                 {
                     MessageBox.Show("Login Successful");
+                    Login.Nome = txtBoxLogin.Text;
                     Home home = new Home();
                     this.FindForm().Hide();
                     home.Show();
@@ -41,7 +42,7 @@ namespace WindowsFormsExc
                 }
             }
             dr.Close();
-            conn.Close();
+            DbConncetion.Connection.Close();
         }
 
         private void buttonClear_Click(object sender, EventArgs e)
@@ -56,5 +57,6 @@ namespace WindowsFormsExc
             this.FindForm().Hide();
             form2.Show();
         }
+        
     }
 }

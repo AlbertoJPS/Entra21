@@ -216,6 +216,7 @@ namespace WindowsFormsExc
             this.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ForeColor = System.Drawing.Color.Black;
             this.Name = "Produto";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "OpcoesDeProduto";
             this.Load += new System.EventHandler(this.Produto_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();

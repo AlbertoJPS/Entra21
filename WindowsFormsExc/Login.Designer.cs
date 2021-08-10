@@ -146,6 +146,7 @@ namespace WindowsFormsExc
             this.Controls.Add(this.lblSenha);
             this.Controls.Add(this.lblLogin);
             this.Name = "Login";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();

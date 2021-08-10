@@ -142,6 +142,7 @@ namespace WindowsFormsExc
             this.Controls.Add(this.lblLogin);
             this.Controls.Add(this.lblSingUp);
             this.Name = "CadastroUsuario";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form2";
             this.ResumeLayout(false);
             this.PerformLayout();

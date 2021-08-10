@@ -15,11 +15,13 @@ namespace WindowsFormsExc
         public Home()
         {
             InitializeComponent();
+            lblTextNome.Text = Login.Nome.ToString(); ;
         }
-
+        
         private void buttonLogout_Click(object sender, EventArgs e)
         {
             Login form1 = new Login();
+            Login.Nome = null;
             this.FindForm().Hide();
             form1.Show();
         }
@@ -29,6 +31,13 @@ namespace WindowsFormsExc
             Produto produto = new Produto();
             this.FindForm().Hide();
             produto.Show();
+        }
+
+        private void Home_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'excEntra21DataSet1.Cadastro'. Você pode movê-la ou removê-la conforme necessário.
+            this.cadastroTableAdapter.Fill(this.excEntra21DataSet1.Cadastro);
+
         }
     }
 }

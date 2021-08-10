@@ -29,11 +29,18 @@ namespace WindowsFormsExc
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.lblHome = new System.Windows.Forms.Label();
             this.lblBemVindo = new System.Windows.Forms.Label();
             this.buttonProduto = new System.Windows.Forms.Button();
             this.buttonLogout = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
+            this.excEntra21DataSet1 = new WindowsFormsExc.ExcEntra21DataSet1();
+            this.cadastroBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cadastroTableAdapter = new WindowsFormsExc.ExcEntra21DataSet1TableAdapters.CadastroTableAdapter();
+            this.lblTextNome = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.excEntra21DataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cadastroBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // lblHome
@@ -42,7 +49,7 @@ namespace WindowsFormsExc
             this.lblHome.BackColor = System.Drawing.Color.Transparent;
             this.lblHome.Font = new System.Drawing.Font("Magneto", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblHome.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblHome.Location = new System.Drawing.Point(88, 21);
+            this.lblHome.Location = new System.Drawing.Point(88, 35);
             this.lblHome.Name = "lblHome";
             this.lblHome.Size = new System.Drawing.Size(80, 25);
             this.lblHome.TabIndex = 0;
@@ -52,9 +59,9 @@ namespace WindowsFormsExc
             // 
             this.lblBemVindo.AutoSize = true;
             this.lblBemVindo.BackColor = System.Drawing.Color.Transparent;
-            this.lblBemVindo.Font = new System.Drawing.Font("Arial", 8.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBemVindo.Font = new System.Drawing.Font("Arial", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblBemVindo.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblBemVindo.Location = new System.Drawing.Point(79, 57);
+            this.lblBemVindo.Location = new System.Drawing.Point(121, 9);
             this.lblBemVindo.Name = "lblBemVindo";
             this.lblBemVindo.Size = new System.Drawing.Size(68, 14);
             this.lblBemVindo.TabIndex = 1;
@@ -65,7 +72,7 @@ namespace WindowsFormsExc
             this.buttonProduto.BackColor = System.Drawing.Color.DarkSeaGreen;
             this.buttonProduto.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buttonProduto.ForeColor = System.Drawing.Color.DarkGreen;
-            this.buttonProduto.Location = new System.Drawing.Point(51, 103);
+            this.buttonProduto.Location = new System.Drawing.Point(52, 121);
             this.buttonProduto.Name = "buttonProduto";
             this.buttonProduto.Size = new System.Drawing.Size(156, 23);
             this.buttonProduto.TabIndex = 2;
@@ -86,14 +93,43 @@ namespace WindowsFormsExc
             this.buttonLogout.UseVisualStyleBackColor = false;
             this.buttonLogout.Click += new System.EventHandler(this.buttonLogout_Click);
             // 
-            // label3
+            // excEntra21DataSet1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(153, 58);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "label3";
+            this.excEntra21DataSet1.DataSetName = "ExcEntra21DataSet1";
+            this.excEntra21DataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // cadastroBindingSource
+            // 
+            this.cadastroBindingSource.DataMember = "Cadastro";
+            this.cadastroBindingSource.DataSource = this.excEntra21DataSet1;
+            // 
+            // cadastroTableAdapter
+            // 
+            this.cadastroTableAdapter.ClearBeforeFill = true;
+            // 
+            // lblTextNome
+            // 
+            this.lblTextNome.AutoSize = true;
+            this.lblTextNome.BackColor = System.Drawing.Color.Transparent;
+            this.lblTextNome.Font = new System.Drawing.Font("Arial Narrow", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTextNome.ForeColor = System.Drawing.Color.Aqua;
+            this.lblTextNome.Location = new System.Drawing.Point(185, 7);
+            this.lblTextNome.Name = "lblTextNome";
+            this.lblTextNome.Size = new System.Drawing.Size(38, 16);
+            this.lblTextNome.TabIndex = 4;
+            this.lblTextNome.Text = "..........";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Magneto", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.label1.Location = new System.Drawing.Point(79, 80);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(100, 20);
+            this.label1.TabIndex = 5;
+            this.label1.Text = "Operações";
             // 
             // Home
             // 
@@ -101,13 +137,18 @@ namespace WindowsFormsExc
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsExc.Properties.Resources.colorful_razer_rgb_hd_wallpaper_preview;
             this.ClientSize = new System.Drawing.Size(247, 305);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblTextNome);
             this.Controls.Add(this.buttonLogout);
             this.Controls.Add(this.buttonProduto);
             this.Controls.Add(this.lblBemVindo);
             this.Controls.Add(this.lblHome);
             this.Name = "Home";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
+            this.Load += new System.EventHandler(this.Home_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.excEntra21DataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cadastroBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -119,6 +160,10 @@ namespace WindowsFormsExc
         private System.Windows.Forms.Label lblBemVindo;
         private System.Windows.Forms.Button buttonProduto;
         private System.Windows.Forms.Button buttonLogout;
-        private System.Windows.Forms.Label label3;
+        private ExcEntra21DataSet1 excEntra21DataSet1;
+        private System.Windows.Forms.BindingSource cadastroBindingSource;
+        private ExcEntra21DataSet1TableAdapters.CadastroTableAdapter cadastroTableAdapter;
+        private System.Windows.Forms.Label lblTextNome;
+        private System.Windows.Forms.Label label1;
     }
 }

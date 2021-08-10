@@ -13,8 +13,7 @@ namespace WindowsFormsExc
 {
     public partial class CadastroUsuario : Form
     {
-        private SqlConnection conn = new SqlConnection(@"Data Source=entra21serv.database.windows.net,1433;Initial Catalog=ExcEntra21;Persist Security Info=True;User ID=adm;Password=13062005x#");
-        SqlCommand cmd;
+        
         public CadastroUsuario()
         {
             InitializeComponent();
@@ -26,10 +25,9 @@ namespace WindowsFormsExc
             string password = txtBoxPassword.Text;
             
             string insert = $"INSERT into dbo.Cadastro (LoginUser,PasswordKey) values ('{login}','{password}')";
-            cmd = new SqlCommand(insert, conn);
-            conn.Open();
-            cmd.ExecuteNonQuery();
-            conn.Close();
+            SqlCommand cmd = new SqlCommand(insert, DbConncetion.Connection);
+            DbConncetion.Connection.Open();
+            DbConncetion.Connection.Close();
             MessageBox.Show("SingUp Successful");
         }
 

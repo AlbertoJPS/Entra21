@@ -13,8 +13,7 @@ namespace WindowsFormsExc
 {
     public partial class Produto : Form
     {
-        private SqlConnection conn = new SqlConnection(@"Data Source=entra21serv.database.windows.net,1433;Initial Catalog=ExcEntra21;Persist Security Info=True;User ID=adm;Password=13062005x#");
-        SqlCommand cmd;
+       
         public Produto()
         {
             InitializeComponent();
@@ -42,12 +41,11 @@ namespace WindowsFormsExc
 
         private void buttonRecarregar_Click(object sender, EventArgs e)
         {
-
             dataGridView1.DataSource = GetData("SELECT * from dbo.Produto");
         }
         private DataTable GetData(string sqlCommand)
         {
-            string connectionString = conn.ConnectionString;
+            string connectionString = DbConncetion.Connection.ConnectionString;
 
             SqlConnection northwindConnection = new SqlConnection(connectionString);
 
