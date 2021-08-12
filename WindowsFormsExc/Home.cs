@@ -39,5 +39,12 @@ namespace WindowsFormsExc
             this.cadastroTableAdapter.Fill(this.excEntra21DataSet1.Cadastro);
 
         }
+
+        //private void buttonPessoa_Click(object sender, EventArgs e)
+        //{
+        //    Pessoa pessoa = new Pessoa();
+        //    this.FindForm().Hide();
+        //    pessoa.Show();
+        //}
     }
 }

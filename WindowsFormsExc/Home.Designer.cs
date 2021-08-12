@@ -39,6 +39,7 @@ namespace WindowsFormsExc
             this.cadastroTableAdapter = new WindowsFormsExc.ExcEntra21DataSet1TableAdapters.CadastroTableAdapter();
             this.lblTextNome = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.buttonPessoa = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.excEntra21DataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cadastroBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -131,12 +132,26 @@ namespace WindowsFormsExc
             this.label1.TabIndex = 5;
             this.label1.Text = "Operações";
             // 
+            // buttonPessoa
+            // 
+            this.buttonPessoa.BackColor = System.Drawing.Color.DarkSeaGreen;
+            this.buttonPessoa.Font = new System.Drawing.Font("Arial Narrow", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonPessoa.ForeColor = System.Drawing.Color.DarkGreen;
+            this.buttonPessoa.Location = new System.Drawing.Point(52, 150);
+            this.buttonPessoa.Name = "buttonPessoa";
+            this.buttonPessoa.Size = new System.Drawing.Size(156, 23);
+            this.buttonPessoa.TabIndex = 6;
+            this.buttonPessoa.Text = "Pessoa";
+            this.buttonPessoa.UseVisualStyleBackColor = false;
+            this.buttonPessoa.Click += new System.EventHandler(this.buttonPessoa_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::WindowsFormsExc.Properties.Resources.colorful_razer_rgb_hd_wallpaper_preview;
             this.ClientSize = new System.Drawing.Size(247, 305);
+            this.Controls.Add(this.buttonPessoa);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblTextNome);
             this.Controls.Add(this.buttonLogout);
@@ -165,5 +180,6 @@ namespace WindowsFormsExc
         private ExcEntra21DataSet1TableAdapters.CadastroTableAdapter cadastroTableAdapter;
         private System.Windows.Forms.Label lblTextNome;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button buttonPessoa;
     }
 }

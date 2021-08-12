@@ -1,0 +1,67 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsExc
+{
+    public partial class Pessoa : Form
+    {
+        public Pessoa()
+        {
+            InitializeComponent();
+        }
+
+        private void buttonVoltar_Click(object sender, EventArgs e)
+        {
+            Home home = new Home();
+            this.FindForm().Hide();
+            home.Show();
+        }
+
+        private void buttonCadastrar_Click(object sender, EventArgs e)
+        {
+            CadastroPessoa cadastroPessoa = new CadastroPessoa();
+            this.FindForm().Hide();
+            cadastroPessoa.Show();
+        }
+        private void buttonBuscar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Pessoa_Load(object sender, EventArgs e)
+        {
+            this.pessoaTableAdapter.Fill(this.excEntra21DataSet3.Pessoa);
+
+        }
+
+        private void buttonRecarregar_Click(object sender, EventArgs e)
+        {
+           dataGridView3.DataSource = GetData("SELECT * from dbo.Produto");
+        }
+
+        private DataTable GetData(string sqlCommand)
+        {
+            string connectionString = DbConncetion.Connection.ConnectionString;
+
+            SqlConnection northwindConnection = new SqlConnection(connectionString);
+
+            SqlCommand command = new SqlCommand(sqlCommand, northwindConnection);
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            adapter.SelectCommand = command;
+
+            DataTable table = new DataTable();
+            table.Locale = System.Globalization.CultureInfo.InvariantCulture;
+            adapter.Fill(table);
+
+            return table;
+        }
+    }
+}

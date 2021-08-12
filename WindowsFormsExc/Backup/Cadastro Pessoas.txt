@@ -1,0 +1,95 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace WindowsFormsExc
+{
+    public partial class CadastroPessoa : Form
+    {
+        public CadastroPessoa()
+        {
+            InitializeComponent();
+        }
+
+        private void buttonSalvar_Click(object sender, EventArgs e)
+        {
+            string nome = txtBoxNome.Text;
+            string cpf = txtBoxCpf.Text;
+            int idade = Convert.ToInt32(txtBoxIdade.Text);
+
+            if (nome != null || cpf != null || idade >= 1)
+            {
+                string insert = $"INSERT into dbo.Produto (Nome,Preco,QtdEstoque) values ('{nome}','{cpf}',{idade})";
+                SqlCommand cmd = new SqlCommand(insert, DbConncetion.Connection);
+                DbConncetion.Connection.Open();
+                DbConncetion.Connection.Close();
+                MessageBox.Show("Pessoa Salva");
+            }
+            else
+            {
+                MessageBox.Show("Todos os campos são Obrigatórios!");
+            }
+        }
+
+        private void buttonVoltar_Click(object sender, EventArgs e)
+        {
+            Pessoa pessoa = new Pessoa();
+            this.FindForm().Hide();
+            pessoa.Show();
+        }
+
+        private void buttonLimpar_Click(object sender, EventArgs e)
+        {
+            txtBoxNome.Clear();
+            txtBoxCpf.Clear();
+            txtBoxIdade.Clear();
+        }
+
+        private void CadastroPessoa_Load(object sender, EventArgs e)
+        {
+            // TODO: esta linha de código carrega dados na tabela 'excEntra21DataSet3.Pessoa'. Você pode movê-la ou removê-la conforme necessário.
+           // this.pessoaTableAdapter.Fill(this.excEntra21DataSet3.Pessoa);
+          
+
+
+        }
+
+        private void buttonRecarregar_Click(object sender, EventArgs e)
+        {
+
+            //BindingSource sr = new BindingSource();
+            //sr.DataSource = GetData("SELECT * from dbo.Produto");
+            //dataGridView2.DataSource = sr;
+
+            dataGridView4.DataSource = GetData("SELECT * from dbo.Produto");
+
+
+        }
+
+        private DataTable GetData(string sqlCommand)
+        {
+            string connectionString = DbConncetion.Connection.ConnectionString;
+
+            SqlConnection northwindConnection = new SqlConnection(connectionString);
+
+            SqlCommand command = new SqlCommand(sqlCommand, northwindConnection);
+            SqlDataAdapter adapter = new SqlDataAdapter();
+            adapter.SelectCommand = command;
+
+            DataTable table = new DataTable();
+            table.Locale = System.Globalization.CultureInfo.InvariantCulture;
+            adapter.Fill(table);
+
+            return table;
+        }
+
+       
+    }
+}
