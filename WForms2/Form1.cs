@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.Common;
 using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
@@ -49,7 +50,7 @@ namespace WForms2
             SqlDataReader dr = cmd.ExecuteReader();
             while (dr.Read())
             {
-                string[] vetor = {dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString() };
+                string[] vetor = { dr[1].ToString(), dr[2].ToString(), dr[3].ToString(), dr[4].ToString(), dr[5].ToString(), dr[6].ToString() };
                 dgVagas.Rows.Add(vetor);
             }
             dr.Close();
@@ -76,7 +77,7 @@ namespace WForms2
             {
 
             }
-        
+
         }
 
 

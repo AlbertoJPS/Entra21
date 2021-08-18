@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace WForms2
 {
-    public class DbConncetion
+    public class DBFunction
     {
         public static SqlConnection Connection { get; set; } = new SqlConnection(@"Data Source=entra21serv.database.windows.net,1433;Initial Catalog=ExcEntra21;Persist Security Info=True;User ID=adm;Password=13062005x#");
 
