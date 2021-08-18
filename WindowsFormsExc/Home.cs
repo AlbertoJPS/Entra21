@@ -46,5 +46,8 @@ namespace WindowsFormsExc
         //    this.FindForm().Hide();
         //    pessoa.Show();
         //}
+
+        // ativas a linha 146 - //  this.buttonPessoa.Click += new System.EventHandler(this.buttonPessoa_Click);
+
     }
 }

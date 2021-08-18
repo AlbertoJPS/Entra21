@@ -155,5 +155,6 @@
   <ItemGroup>
     <None Include="Resources\kisspng-computer-icons-button-blog-refresh-drawing-vector-5ab0baa89e5c40.1979344415215315606487.jpg" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

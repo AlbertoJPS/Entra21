@@ -143,7 +143,7 @@ namespace WindowsFormsExc
             this.buttonPessoa.TabIndex = 6;
             this.buttonPessoa.Text = "Pessoa";
             this.buttonPessoa.UseVisualStyleBackColor = false;
-            this.buttonPessoa.Click += new System.EventHandler(this.buttonPessoa_Click);
+//            this.buttonPessoa.Click += new System.EventHandler(this.buttonPessoa_Click);
             // 
             // Home
             // 
